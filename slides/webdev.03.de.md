@@ -11,7 +11,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
-v1.0.1
+v1.0.2
 
 ---
 
@@ -38,7 +38,7 @@ v1.0.1
 
 * Eine **URL** identifiziert eine **Resource**
 * URLs haben eine Hierarchie
-* Methoden führen Operationen auf Resourcne aus
+* Methoden führen Operationen auf Ressourcen aus
 * Operationen sind implizit 
 * Hypermedia Format für die Repräsentation von Daten 
 * Links zur Navigation 
@@ -132,11 +132,11 @@ Quelle: Wikipedia[^2]
 
 # CRUD HTTP Verb Mapping
 
-* **C**reate ➡ **POST**
-* **R**ead ➡ **GET**
-* **U**pdate ➡ **PUT** (manchmal auch **PATCH**)
-* **D**elete ➡ **DELETE**
-* (**S**earch) ➡ **GET**
+* **C**reate ▶ **POST**
+* **R**ead ▶ **GET**
+* **U**pdate ▶ **PUT** (manchmal auch **PATCH**)
+* **D**elete ▶ **DELETE**
+* (**S**earch) ▶ **GET**
 
 ---
 
@@ -144,11 +144,11 @@ Resourcen erzeugen
 
 * *POST* erzeugt eine neue Ressource 
 * Der Server entscheider auf Basis der URI der Ressource 
-* Beipsiele
-    * Web: Anbleigen eines neuen Posts auf einem Blog
-        * Server entscheided über die URI des Blog-Eintrags und z.B. der Kommentare an dem Post
+* Beispiele
+    * Web: Anlegen eines neuen Posts in einem Blog
+        * Server entscheidet über die URI des Blog-Eintrags und z.B. der Kommentare an dem Post
     * Service
-        * Anlage eines neuen Datenatzes (z.B. neuer Student*inn)s
+        * Anlage eines neuen Datensatzes (z.B. neuer Student*inn)s
 
 ---
 
@@ -227,7 +227,7 @@ If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
 
 # Frage
 
-Woher wissen wir nun, welche URLs wir aufrufen können, wo sich die Resourcen befinden, was wir damit machen können?
+Woher wissen wir nun, welche URLs wir aufrufen können, wo sich die Ressourcen befinden, was wir damit machen können?
 
 WSDL? WADL? RTFM? 
 
@@ -423,7 +423,7 @@ Location /api/student/123456
 # HTTP Status Codes (1)
 
 * Status Code sind wichtig 
-* Representieren das Eegebnis der Aktion 
+* Repräsentieren das Ergebnis der Aktion 
 * https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 ---
@@ -448,7 +448,7 @@ Location /api/student/123456
 
 # Wichtige 300er Codes
 
-* 301 Moved Permanently ▶ Resourcen neu organisiert/verschoben
+* 301 Moved Permanently ▶ Ressourcen neu organisiert/verschoben
 * 302 Found ▶ Redirect für ein spezielles Objekt (z.B. Suche)
 * 303 Other ▶ Redirect aufgrund einer Operation
 * 204 Not modified ▶ Ressource wurde nicht geändert
@@ -470,8 +470,8 @@ Location /api/student/123456
 
 # Zusammenfassung
 
-* Web-basierte Anwendungen basieren auf Zustandsautomaten und standardisierten Protkollen
-* Es gibt viele *Meinungen* was Restful ist, jenachdem mit wem man spricht 
+* Web-basierte Anwendungen basieren auf Zustandsautomaten und standardisierten Protokollen
+* Es gibt viele *Meinungen* was RESTful ist, jenachdem mit wem man spricht 
 * Oftmals ein verlorener Kampf... 
 * Es gibt gute und schlechte REST-APIs, mit und ohne Hypermedia 
 
