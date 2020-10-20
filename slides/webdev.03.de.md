@@ -11,14 +11,14 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
-v1.0.2
+v1.0.3
 
 ---
 
 # Was ist REST (nicht)?
 
 * REST ist **kein** Protokoll
-* REST ist **kein** STandard 
+* REST ist **kein** Standard 
 * REST ist ein Architektur Stil für netzwerkbasierte Anwendungen
 * REST definiert eine Menge von **grundlegenden Prinzipien**
 
@@ -26,7 +26,7 @@ v1.0.2
 
 # Vorteile von REST 
 
-* Statuslose (engl. stateless)
+* Statuslos (engl. stateless)
 * Skalierbar 
 * Fehlertolerant 
 * Lose gekoppelt
@@ -36,11 +36,11 @@ v1.0.2
 
 # Grundprinzipien
 
-* Eine **URL** identifiziert eine **Resource**
+* Eine **URL**[^2] identifiziert eine **Ressource**
 * URLs haben eine Hierarchie
 * Methoden führen Operationen auf Ressourcen aus
 * Operationen sind implizit 
-* Hypermedia Format für die Repräsentation von Daten 
+* Hypermedia-Format für die Repräsentation von Daten 
 * Links zur Navigation 
 
 ---
@@ -50,7 +50,7 @@ v1.0.2
 Im Folgenden:
 
 * Identifikation einer Nachricht 
-* Manipulationen von Resources
+* Manipulationen von Ressourcen
 * Selbstbeschreibende Nachrichten 
 * HATEOAS
 
@@ -148,7 +148,7 @@ Resourcen erzeugen
     * Web: Anlegen eines neuen Posts in einem Blog
         * Server entscheidet über die URI des Blog-Eintrags und z.B. der Kommentare an dem Post
     * Service
-        * Anlage eines neuen Datensatzes (z.B. neuer Student*inn)s
+        * Anlage eines neuen Datensatzes (z.B. neuer Student*in)
 
 ---
 
@@ -167,7 +167,8 @@ Beispiel
 ```
     static int a = 0;
     int add(int b) {
-        return a + b; 
+        a = a+b;
+        return a; 
     }
 ```
 
@@ -233,7 +234,7 @@ WSDL? WADL? RTFM?
 
 ---
 
-# Lösung: HATEOS
+# Lösung: HATEOAS
 
 **H**ypermedia **A**s **T**he **E**ngine **O**f **A**pplication **S**tate
 
@@ -253,8 +254,8 @@ Meint Roy T. Fielding[^4]... schon mal gehört, ne? Ist der Typ, der REST quasi 
 
 Viele Programmierer, die eine »RESTful API« oder einen »REST-Web Service« entwickeln, haben sich nie wirklich mit dem Thema auseinandergesetzte... sonst gäbe es nicht das hier:
 
-* https://api.example.org/v1/boking/
-* https://api.example.org/v1.1/bokking/
+* https://api.example.org/v1/booking/
+* https://api.example.org/v1.1/booking/
 
 oder noch schlimmer 
 
@@ -272,7 +273,7 @@ oder noch schlimmer
 # Links (1)
 
 * Links nutzen um dem Client das »Entdecken« von Operationen und Ressourcen zu ermöglichen
-* Links beschreiben Möglichkeiten mit der REssource zu interagieren
+* Links beschreiben Möglichkeiten mit der Ressource zu interagieren
 * Die URLs müssen den Clients nicht bekannt sein 
 * Hierdurch lässt sich der Status der Ressource kontrollieren 
 
@@ -291,7 +292,7 @@ Aufbau von Links
 
 # Noten API 
 
-* Status innerhalb der REST AP
+* Status innerhalb der REST API
 
 * Links in HATEOAS beschreiben die Statusübergänge
 
@@ -302,7 +303,7 @@ Aufbau von Links
 # Suche nach einem/r Student*in
 
 ```plain
-POST /search/?spo=3 HTTP/1.1
+POST /search?spo=3 HTTP/1.1
 Host: grades.hs-heilbronn.de
 Accept: application/vnd.hs-heilbronn.stud-v1+json
 
@@ -322,16 +323,16 @@ Content-type: application/vnd.hs-heilbronn.stud-v1.0+json
 { "grades": [
   {"course": "seks", "id": "261761", "date": "2019-09-16", "grade": "5.0",
     "links": [
-        { "href": "/student/123456", "methode": "GET",
+        { "href": "/student/123456/", "methode": "GET",
           "rel": "details", "type": "application/vnd.hs-heilbronn.stud+json" },
         {  
           "href": "/cancel", "methode": "POST",
           "rel": "cancel", "type": "application/vnd.hs-heilbronn.stud+json" }
     ]
   },
-   {"course": "seks", "id": "261761", "date": "2020-01-23", "grade": "5.0",
+   {"course": "seks", "id": "261761", "date": "2020-01-23", "grade": "2.3",
     "links": [
-        { "href": "/student/123456", "methode": "GET",
+        { "href": "/student/123456/", "methode": "GET",
           "rel": "details", "type": "application/vnd.hs-heilbronn.stud+json" },
         {  
           "href": "/cancel", "methode": "POST",
@@ -451,7 +452,7 @@ Location /api/student/123456
 * 301 Moved Permanently ▶ Ressourcen neu organisiert/verschoben
 * 302 Found ▶ Redirect für ein spezielles Objekt (z.B. Suche)
 * 303 Other ▶ Redirect aufgrund einer Operation
-* 204 Not modified ▶ Ressource wurde nicht geändert
+* 304 Not modified ▶ Ressource wurde nicht geändert
 
 ---
 
