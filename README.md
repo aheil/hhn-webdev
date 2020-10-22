@@ -12,6 +12,11 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 
 ## Lab and Home Assignments 
 
+### Lab 1: Intro to Web technologies 
+* [Basic HTTP requests using telnet](labs/labs/01_basic_http/telnet.md)
+* Home assignment: [Simple Web Server usig .NET Core](labs/labs/01_basic_http/simplewebserver.md)
+* Home assignment: []
+
 ## License
 
 All the code in this repository is made available under the MIT license unless otherwise noted.
