@@ -14,8 +14,8 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 
 ### Lab 1: Intro to Web technologies 
 * [Basic HTTP requests using telnet](labs/labs/01_basic_http/telnet.md)
-* Home assignment: [Simple Web Server usig .NET Core](labs/labs/01_basic_http/simplewebserver.md)
-* Home assignment: []
+* Home assignment: [Developing a Simple Web Server](labs/labs/01_basic_http/simplewebserver.md)
+* Home assignment: [Understanding HTTP Headers]((labs/labs/01_basic_http/headers.md))
 
 ## License
 
