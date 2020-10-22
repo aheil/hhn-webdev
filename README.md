@@ -13,9 +13,9 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 ## Lab and Home Assignments 
 
 ### Lab 1: Intro to Web technologies 
-* [Basic HTTP requests using telnet](labs/labs/01_basic_http/telnet.md)
-* Home assignment: [Developing a Simple Web Server](labs/labs/01_basic_http/simplewebserver.md)
-* Home assignment: [Understanding HTTP Headers]((labs/labs/01_basic_http/headers.md))
+* [Basic HTTP requests using telnet](labs/01_basic_http/telnet.md)
+* Home assignment: [Developing a Simple Web Server](labs/01_basic_http/simplewebserver.md)
+* Home assignment: [Understanding HTTP Headers]((labs/01_basic_http/headers.md))
 
 ## License
 
