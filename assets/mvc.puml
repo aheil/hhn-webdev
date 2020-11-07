@@ -1,0 +1,12 @@
+@startuml MVC
+
+class Controller 
+class View
+class Model
+ 
+Model --> "aktualisiert\n(via Events)" View
+View --> "sendet Benutzereingabe" Controller
+Controller --> "aktualisiert\n(manchmal) direkt" View
+Controller --> "manipulierrt" Model 
+
+@enduml
