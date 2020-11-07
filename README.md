@@ -1,6 +1,6 @@
 ![Publish](https://github.com/aheil/hhn-webdev/workflows/Publish/badge.svg?branch=main)
 
-This course is being taught as a part of the Bachelor Software Engineering at Heilbronn University fpr Applied Sciences in Germany. 
+This course is being taught as a part of the Bachelor Software Engineering at Heilbronn University for Applied Sciences in Germany. 
 
 [Go to the official Website ⏭](https://www.hs-heilbronn.de/webdev)
 
@@ -9,6 +9,7 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 * 🇩🇪 TBD
 * 🇩🇪 TBD
 * 🇩🇪 [REST + HATEOAS](slides/webdev.03.de.pdf) 
+* 🇩🇪 [MVVM](slides/webdev.04.de.pdf) 
 
 ## Lab and Home Assignments 
 
