@@ -1,0 +1,12 @@
+@startuml MVP
+
+class Presenter
+class View
+class Model
+
+View --> "sendet Benutzer-Events" Presenter
+Presenter --> "aktualisiert" Model
+Model --> "Events bzgl.\nStatusänderung" Presenter
+Presenter --> "aktualisiert" View
+
+@enduml

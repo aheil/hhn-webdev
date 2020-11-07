@@ -1,0 +1,22 @@
+@startuml MVVM
+
+class View
+class ViewModel
+class Model
+
+interface IView 
+interface IViewModel
+
+
+IView --> IViewModel
+
+IViewModel : onStateChanged()
+Model : state
+
+ViewModel --> Model
+ViewModel : model
+
+View --|> IView
+ViewModel --|> IViewModel
+
+@enduml
