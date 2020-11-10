@@ -16,7 +16,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
-v1.0.0
+v1.0.1
 
 ---
 
@@ -41,10 +41,10 @@ Entwurfsmuster versuchen
 
 * MVC und MVP (s.u.) werden teilweise als Entwurfsmuster angesehen
 * MVVM kein Entwurfsmuster sonder ein *Architekturmuster* 
-* Architekturmuster beschreiben die Struktur bzw. Organisation einer Anwendung und die Interkation der einzelnen Komponenten
+* Architekturmuster beschreiben die Struktur bzw. Organisation einer Anwendung und die Interaktion der einzelnen Komponenten
 * Entwurfsmuster hingegen beschreiben ein Teilproblem einer Software
 
-Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z.B. einem View) verwenden ist das Observer POattern (dt. Beobachtermuster).
+Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z.B. einem View) verwenden ist das Observer Pattern (dt. Beobachtermuster).
 
 ---
 
@@ -64,7 +64,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * Unterschiedliche Aspekte de Anwendung werden getrennt (Separation of Concerns)
 * Implementierungen weichen voneinander ab 
 
-![bg right w:600    ](../img/assets/mvc.png)
+![bg right w:600    ](../img/assets/MVC.png)
 
 ---
 
@@ -131,9 +131,9 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 # Model-View-Presenter (1)
 
-* Im Gegensatz zu MVP liegt die Präsentationslogik beim Presenter
+* Im Gegensatz zu MVC  liegt die Präsentationslogik beim Presenter
 *  Das Model ist ein Interface, in dem die Daten definiert werden, die angezeigt werden
-* Ein View ist ein passives interface, das die Daten (d.h. das Model) anzeigt und Commandos (d.h. Events) an den Presenter routed, dass dieser etwas mit den Daten »macht« 
+* Ein View ist ein passives Interface, das die Daten (d.h. das Model) anzeigt und Commandos (d.h. Events) an den Presenter routed, dass dieser etwas mit den Daten »macht« 
 * Der Presenter agiert sowohl für das Model aus auch den View 
 * Der Presenter bereitet die Daten auf, um Sie im View anzuzeigen 
 * Ein Presenter pro View 
@@ -142,7 +142,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 # Model-View-Presenter (2)
 
-![center h:320](../img/assets/mvp.png)
+![center h:320](../img/assets/MVP.png)
 
 ---
 
@@ -179,7 +179,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * Im Gegensatz zum View finden hier komplizierte Validierungen statt (z.B. Einbezug weiterer Daten)
 * Frägt das Model ab (sendet Queries an das Model)
 * Empfängt Daten vom Model, bereitet die Daten auf bzw. formatiert die Daten und sendet diese an die View
-* VMP nutzt die gleichen Verfahren bzgl. Events wie MVC
+* MVP nutzt die gleichen Verfahren bzgl. Events wie MVC
 
 <!-- ---
 
@@ -191,7 +191,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 * MVP wird überwiegend in der Client-Entwicklung genutzt 
     * Google Web Toolkit (Java)
-* In er Praxis ist der Unterschied zu MVS verschwindend gering
+* In der Praxis ist der Unterschied zu MVC verschwindend gering
 
 ---
 
@@ -199,7 +199,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 Es existieren zwei Varianten für MVP:
 
-* Passivier View 
+* Passiver View 
     * Interaktionen werden ausschließlich vom Presenter bearbeitet 
     * View wird ausschließlich vom Presenter aktualisiert 
 * Supervising Controller
@@ -222,7 +222,7 @@ Es existieren zwei Varianten für MVP:
 
 # MVVM
 
-![center h:480](../img/assets/mvvm.png)
+![center h:480](../img/assets/MVVM.png)
 
 ---
 
@@ -232,7 +232,7 @@ Es existieren zwei Varianten für MVP:
 * Zweiwegekommunikation via Binding in XAML in WPF 
 * ViewModel repräsentiert den View in einer »darstellungsneutralen Form«
 * Direktes Binding zwischen View und ViewModel
-* Ein VieModel pro View 
+* Ein ViewModel pro View 
 * Wenn auch nicht gebräuchlich findet man manchmal Bezeichnung Model-View-Binder 
 * In WPF ist XAML der Binder
 
@@ -242,7 +242,7 @@ Es existieren zwei Varianten für MVP:
 
 * Das ViewModel ist das »Model« des Views 
 * Vermittler (engl. mediator) zwischen dem View und dem Model 
-* Übernimmt die Funktion des Controllers in MVP
+* Übernimmt die Funktion des Controllers in MVC
 * Konvertiert die Daten aus dem Model für den View und umgekehrt 
 * Leitet Commands (Aktionen) an das Model weiter
 
@@ -251,9 +251,9 @@ Es existieren zwei Varianten für MVP:
 # Praxistipps 
 
 * Durch Implementierung von abstrakter Basisklassen lässt sich sehr viel Redundanz in den Klassen einsparen
-* Speziell in WPF. Kommandos erhalten ebenfalls in Interface: `ICommand` 
+* Speziell in WPF> Kommandos erhalten ebenfalls in Interface: `ICommand` 
 * Commands enthalten eine `execute` und `canExecute` Methode 
-* Ob ein Commando ausgeführt werden kann (UI-Element aktiv) hängt vom Statu der `canExecute` Methode ab
+* Ob ein Commando ausgeführt werden kann (UI-Element aktiv) hängt vom Status der `canExecute` Methode ab
 
 ---
 
