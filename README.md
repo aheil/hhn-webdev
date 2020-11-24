@@ -10,6 +10,7 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 * 🇩🇪 TBD
 * 🇩🇪 [REST + HATEOAS](slides/webdev.03.de.pdf) 
 * 🇩🇪 [MVVM](slides/webdev.04.de.pdf) 
+* 🇩🇪 [WebAssembly](slides/webdev.05.de.pdf) 
 
 ## Lab and Home Assignments 
 
