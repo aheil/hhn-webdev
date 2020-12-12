@@ -2,15 +2,33 @@
 
 This course is being taught as a part of the Bachelor Software Engineering at Heilbronn University for Applied Sciences in Germany. 
 
+
+
 [Go to the official Website ⏭](https://www.hs-heilbronn.de/webdev)
 
-## Lecture Slides 
+# Course Home 
 
-* 🇩🇪 TBD
-* 🇩🇪 TBD
-* 🇩🇪 [REST + HATEOAS](slides/webdev.03.de.pdf) 
-* 🇩🇪 [MVVM](slides/webdev.04.de.pdf) 
-* 🇩🇪 [WebAssembly](slides/webdev.05.de.pdf) 
+* [Syllabus](pages/syllabus.md)
+* Calendar
+* Readings 
+* [Lecture Notes](pages/lecturenotes.md) 
+* Lecture Videos 
+* [Labs](pages/labs.md) 
+* [Exercises](pages/exercises.md)
+* Exams 
+* Final Project 
+* Related Resources 
+* Download Course Material 
+
+# Calendar
+# Readings 
+# Lecture Notes 
+# Lecture Videos 
+# Labs 
+# Exams 
+# Final Project 
+# Related Resources 
+# Download Course Material 
 
 ## Lab and Home Assignments 
 
