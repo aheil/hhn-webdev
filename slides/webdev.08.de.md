@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.0.0
+v1.0.1
 <!--/version-->
 
 ---
@@ -86,10 +86,11 @@ window
 <div id="firstName">
 Andreas
 </div>
-<div id="latName">
+<div id="lastName">
 Heil
 </div> 
 ```
+⏭ [Beispiel](../assets/mouseover.html)
 
 --- 
 
@@ -139,8 +140,6 @@ PUBLIC "...">
   ...├
 <head>
 ```
-
-│
 
 ---
 
@@ -221,7 +220,7 @@ body
 
 ---
 
-# Nodes - Properties
+# Nodes - Properties (1)
 
 | Property | Beschreibung |
 |---|---|
@@ -229,12 +228,20 @@ body
 | *nodeName* | Name des Node,s abhängig vom Typ |
 | *parentNode* | Referenz zum übergeordneten Node |
 | *childNodes* | Nur-lese Array mit den Kind-Nodes, Länge 0 wenn keine vorhanden |
+
+
+---
+
+# Nodes - Properties(2)
+
+| Property | Beschreibung |
+|---|---|
 | *{previous\|next}Sibling*| Vorheriges bzw. nächstes Element, *null* wenn kein Element existiert |
 | *attributes* | Nur-Lese Array, das *Attr*-Instanzen als Attribute des Nodes enthält |
 
 ---
 
-# Nodes - Methoden
+# Nodes - Methoden (1)
 
 | Methode| Beschreibung |
 |---|---|
@@ -242,6 +249,13 @@ body
 | *hasChildNodes()* | Liefert wahr, falls der Node untergeordnete Elemente besitzt |
 | *appendChilde(Node)* | Fügt den spezifizierten Node an an das Ende der untergeordneten Elemente hinzu|
 | *insertBefore(Node1, Node2)* | Fügt Node1 direkt vor Node2 in die Liste der untergeordneten Elemente hinzu, |
+
+---
+
+# Nodes - Methoden (2)
+
+| Methode| Beschreibung |
+|---|---|
 | *removeChildNode(Node)* | Entfernt den spezifizierten Node aus den untergeordneten Elementen |
 | *replaceChild(Node1, Node2)* | Ersetzt Node2 durch Node1 in der Liste der untergeordneten Elemente |
 
