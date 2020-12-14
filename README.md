@@ -8,7 +8,7 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 
 # Course Home 
 
-* [Syllabus](pages/syllabus.md)
+* [Syllabus](#syllabus)
 * Calendar
 * Readings 
 * [Lecture Notes](pages/lecturenotes.md) 
@@ -19,6 +19,8 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 * Final Project 
 * Related Resources 
 * Download Course Material 
+
+# Syllabus
 
 # Calendar
 # Readings 
