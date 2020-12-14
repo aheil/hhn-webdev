@@ -22,6 +22,33 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 
 # Syllabus
 
+## Course Meeting Times
+
+Lectures: 1 session / week, 90 min / session
+
+## Prerequisites 
+
+[262062 DevOps](https://hs-heilbronn.de/devops)
+
+## Description 
+
+262181 Web Application Development covers the basics of Web technologies and is accompanied by the implementation of a complete Web application,
+
+262181 Web Application Development is primarily intended for undergraduates students of software engineering as well as applied computer science.
+
+## Lectures
+
+Each lecture will cover a specific topic. Read the given material and submit by 23 pm the night before 
+* The answer(s) to the homework reading questions
+* Your own question about the topic (will be tried to be answered)
+
+First half of the lecture will cover the introduction to the topic, the second part will cover examples, live coding and discussions. please ask, please interrupt and please correct. 
+
+
+## Quizzes  
+
+There will be two quizzes during the regular lecture time slots taking places using EvaExam. There is no final exam. The second quiz take place near end-of-term.
+
 # Calendar
 # Readings 
 # Lecture Notes 
