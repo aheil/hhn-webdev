@@ -18,6 +18,10 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 * Home assignment: [Developing a Simple Web Server](labs/01_basic_http/simplewebserver.md)
 * Home assignment: [Understanding HTTP Headers]((labs/01_basic_http/headers.md))
 
+### Lab 2: MVVM
+
+* Knockout.js 
+
 ## License
 
 All the code in this repository is made available under the MIT license unless otherwise noted.
