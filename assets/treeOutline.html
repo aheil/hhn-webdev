@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<script>
+    function treeOutline() {
+      return subtree(document.documentElement, 0);
+    }
+
+    function printName(level, name) {
+        var retVal = "";
+        for (var i = 0; i < level; i++)
+        {
+            retVal += "-";
+        }
+        retVal += " ";
+        retVal += name;
+        retVal += "\n";
+        return retVal;
+    }
+
+
+    function subtree(node, level) {
+        var retVal = ""; 
+        var elementType = window.Node ? Node.ELEMENT_NODE : 1;
+        // retVal += node.nodeType;
+        if (node.nodeType == elementType) {
+            retVal += printName(level, node.nodeName);
+            var children = node.childNodes;
+            for (var i = 0; i < children.length; i++) {
+                retVal += subtree(children[i], level + 1);
+            }
+        }
+        return retVal;
+    }
+    </script>
+
+<body>
+    <div id="content">
+        <h1>Prof. Andreas Heil</h1>
+        <p>Methoden des Software Engineerings</p>
+        <p>Unterrichtet <em>hot s**t</em> Fächer.</p>
+        <hr>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li>Web Application Development</li>
+            <li>DevOps</li>
+            <li>Cloud Computing</ltreeOutLinei>
+        </ul>
+    </div>
+
+    <form action="">
+        <p>
+            <input type="button" value="Document Tree" onClick="window.alert(treeOutline());" />
+        </p>
+    </form>
+
+</body>
+
+</html>
