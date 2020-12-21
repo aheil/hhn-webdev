@@ -1,12 +1,10 @@
 ![Publish](https://github.com/aheil/hhn-webdev/workflows/Publish/badge.svg?branch=main)
 
-This course is being taught as a part of the Bachelor Software Engineering at Heilbronn University for Applied Sciences in Germany. 
+Dieser Kurs ist Teil des Studiengangs Bachelors Software Engineering (SEB) an der Hochschule Heilbronn.
 
+[Offizielle Webseite ⏭](https://www.hs-heilbronn.de/webdev)
 
-
-[Go to the official Website ⏭](https://www.hs-heilbronn.de/webdev)
-
-# Course Home 
+# Kurs Übersicht 
 
 * [Syllabus](#syllabus)
 * Calendar
@@ -22,32 +20,34 @@ This course is being taught as a part of the Bachelor Software Engineering at He
 
 # Syllabus
 
-## Course Meeting Times
+## Kurszeiten
 
-Lectures: 1 session / week, 90 min / session
+Vorlesung: 1 Vorlesungseinheit / Woche, 90 Min. / Session
 
-## Prerequisites 
+## Voraussetzungen 
 
 [262062 DevOps](https://hs-heilbronn.de/devops)
 
-## Description 
+## Beschreibung 
 
-262181 Web Application Development covers the basics of Web technologies and is accompanied by the implementation of a complete Web application,
+262181 Web Application Development behandelt grundlegende Web-Technologien und wird mit der Implementierung eines eigenen Web-Projektes abgeschlossen.
 
-262181 Web Application Development is primarily intended for undergraduates students of software engineering as well as applied computer science.
+262181 Web Application Development ist eine Wahlveranstaltung im Modul WE 262100 Erweiterung Anwendungen und richtet sich primär an Studierende im Studiengang Software Engineering Bachelor (SEB).
 
-## Lectures
+## Vorlesung
 
-Each lecture will cover a specific topic. Read the given material and submit by 23 pm the night before 
-* The answer(s) to the homework reading questions
-* Your own question about the topic (will be tried to be answered)
+Jede Vorlesungseinheit widmet sich einem speziellen Thema in der Web Entwicklung. Lesen Sie als Hausaufgabe das bereitgestellte Studienmaterial vor der Veranstaltung durch und übermitteln Sie die zugehörigen Fragen bis zum Vortag 22:00 Uhr.
 
-First half of the lecture will cover the introduction to the topic, the second part will cover examples, live coding and discussions. please ask, please interrupt and please correct. 
+* Die Antwort(en) in zur bereitgestellten Literatur 
+* Eigene Fragen zum Thema (ich werde versuchen Ihre Frage in der Vorlesung zu beantworten)
+
+Die erste Hälfte der Veranstaltung behandelt eine Einführung in das jeweilige Thema, die zweite Hälfte widmet sich Ihren Fragen, Diskussionen und Live Coding. Unterbrechen Sie, diskutieren Sie, stellen Sie Fragen
+
+## Tests  
+
+Während der regulären Veranstaltungen werden zwei Tests auf Basis von EvaExam durchgeführt. Der zweite Test findet gegen Ende des Vorlesungszeitraum statt. Es findet keine Klausur statt.
 
 
-## Quizzes  
-
-There will be two quizzes during the regular lecture time slots taking places using EvaExam. There is no final exam. The second quiz take place near end-of-term.
 
 # Calendar
 # Readings 
