@@ -66,6 +66,10 @@ Während der regulären Veranstaltungen werden zwei Tests auf Basis von EvaExam 
 * Home assignment: [Developing a Simple Web Server](labs/01_basic_http/simplewebserver.md)
 * Home assignment: [Understanding HTTP Headers]((labs/01_basic_http/headers.md))
 
+### Lab 2: MVVM
+
+* Knockout.js 
+
 ## License
 
 All the code in this repository is made available under the MIT license unless otherwise noted.
