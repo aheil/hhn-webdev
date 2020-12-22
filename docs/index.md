@@ -1,6 +1,24 @@
-## Welcome to GitHub Pages
+# Web Application Development 
+
+
+## Course Overview 
+
+* [Syllabus](syllabus.md)
+* Calendar
+* Readings 
+* [Lecture Notes](lecturenotes.md) 
+* Lecture Videos 
+* [Labs](abs.md) 
+* [Exercises](pexercises.md)
+* Exams 
+* Final Project 
+* Related Resources 
+* Download Course Material 
+
 
 You can use the [editor on GitHub](https://github.com/aheil/hhn-webdev/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
