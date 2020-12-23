@@ -1,7 +1,7 @@
 # Lecture Slides 
 
-| Unit # | Topics and Notes |
-|:-|:-|
+| Lecture # | Topics and Notes |
+| --- | --- |
 | 1 | 🇩🇪 Introduction, History of the WWW |
 | 2 | 🇩🇪 Web Technologies |
 | 3 | 🇩🇪 [REST + HATEOAS](../slides/webdev.03.de.pdf) |
