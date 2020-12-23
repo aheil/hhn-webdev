@@ -5,7 +5,7 @@
 * [Syllabus](syllabus)
 * [Calendar](calendar)
 * [Readings](readings) 
-* [Lecture Notes](lecturenotes.md) 
+* [Lecture Notes](lecturenotes) 
 * [Lecture Videos](lecturevideos)
 * [Labs](labs) 
 * [Final Project](finalproject) 
