@@ -1,22 +1,10 @@
 ![Publish](https://github.com/aheil/hhn-webdev/workflows/Publish/badge.svg?branch=main)
 
-Dieser Kurs ist Teil des Studiengangs Bachelors Software Engineering (SEB) an der Hochschule Heilbronn.
+This course is being taught as part of Software Engineering Bachelor (SEB) at Heilbronn University for Applied Sciences in Germany.
 
-[Offizielle Webseite ⏭](https://www.hs-heilbronn.de/webdev)
+This is the repository for course information. If you are looing for the web pages please go to the [GitHub Pages of this repository](https://aheil.github.io/hhn-webdev/).
 
-# Kurs Übersicht 
-
-* [Syllabus](#syllabus)
-* Calendar
-* Readings 
-* [Lecture Notes](pages/lecturenotes.md) 
-* Lecture Videos 
-* [Labs](pages/labs.md) 
-* [Exercises](pages/exercises.md)
-* Exams 
-* Final Project 
-* Related Resources 
-* Download Course Material 
+[Go to the official university website](https://www.hs-heilbronn.de/webdev) [⏭](https://www.hs-heilbronn.de/webdev)
 
 # Syllabus
 

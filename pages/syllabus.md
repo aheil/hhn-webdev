@@ -10,6 +10,13 @@ Lectures: 1 session / week, 90 min / session
 
 ## Lectures 
 
-## Quizzes 
+## Quizzes
 
-## 
+## Assignments 
+
+## Grading 
+
+## Turn-in Policy
+
+## Collaboration
+
