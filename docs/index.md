@@ -17,6 +17,10 @@ Undergraduate (SEB/AIB)
 
 2/4
 
+## Workload
+
+30h class / 90h self-studies
+
 ## License 
 
 Unless stated otherwise, course material created by me is released under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). 
