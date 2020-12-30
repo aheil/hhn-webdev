@@ -36,7 +36,7 @@ There will be two quizzes during regular lecture time slot. There will be no fin
 
 ## Assignments 
 
-There are 6 labs and a final project. Labs will look like real word tasks. All lab have to be done in pair-programming. The final project will be submitted by 2-3 pairs (4-6 students) and presented to the class. 
+There are 6 labs and a final project. Labs will look like real world tasks. All lab have to be done in pair-programming. The final project will be submitted by 2-3 pairs (4-6 students) and presented to the class. 
 
 ## Grading 
 
