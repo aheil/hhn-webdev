@@ -2,9 +2,9 @@
 
 | Lecture # | Topic | Key Dates |
 | --- | --- | --- |
-| 1 | [Introduction, History of the WWW](https://github.com/aheil/hhn-webdev/blob/main/slides/webdev.01.de.pdf) | |
-| 2 | Basic Web Technologien: HTML | |
-| 3 | Basic Web Technologies: CSS | |
+| 1 | Introduction, History of the WWW | |
+| 2 | Basic Web Technologien: HTML, CS, JavaScript | |
+| 3 | | |
 | 4 | DOM | |
 | 5 | JavaScript | |
 | 6 | TypeScrip | |
