@@ -1,3 +1,3 @@
-# Download Course Material 
-This release contains the same content as the online GitHub version of the course, except for any audio/video materials and other files external servers.
+# Kursmaterial herunterladen 
 
+Dieses Release enthält den identischen Inhalt der GitHub-Version des Kurses mit Ausnahme von Audio-/Videodateien und Dateien von externen Servern.

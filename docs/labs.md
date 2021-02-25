@@ -1,5 +1,5 @@
-# Labs & Exercises
+# Labs & Übungsaufgaben
 
-| Lab | Supporting files |
+| Lab | Dateien |
 | --- | --- |
 | ... | ... | 
