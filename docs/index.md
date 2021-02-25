@@ -1,26 +1,27 @@
-# Course Overview  
+# Kursübersicht  
 
-This class is an elective course in the software engineering specialization (262900).
+Dieser Kurs ist ein Wahlpflichtfach im Bachelor Studiengang Software Engineering Bachelor (262181) und Angewandte Informatik.
 
-## Instructor 
+## Dozent 
 Prof. Andreas Heil
 
-## Course Number 
+## Kursnummer
 
 262181 (SPO4)
 
 ## Level
 
-Undergraduate (SEB/AIB)
+Bachelor (SEB/AIB)
 
-## Semester Hour / ECTS 
+## Semmesterwochenstunden / ECTS 
 
 2/4
 
 ## Workload
 
-30h class / 90h self-studies
+30h Lerneinheiten / 90h Selbststudium
 
-## License 
+## Lizenz 
 
-Unless stated otherwise, course material created by me is released under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). 
+Sofern nicht anders angegeben, steht das gesamte Kursmaterial unter einer
+ [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/). 

@@ -1,4 +1,4 @@
-# Related Resources 
+cd hhn# Related Resources 
 
 This section contains external resources related to the material taught in this class.
 
