@@ -18,9 +18,9 @@ Tools des SW Engineering (173072)
 Der Kurs ist eine Kombination aus Vorlesungen ergänzt durch praktische Arbeiten (Labs). Die Vorlesungseinheiten behandeln Grundlagen und weiterführende Aspekte von Web-Technologien, Programmiersprachen und Frameworks. Behandelte Themen sind u.a. HTML, CSS, JavaScript und TypeScript, REST, HATEOAS und MVVM ergänzt durch Themen zu Sicherheit und aktuellen Entwicklungen. 
 Die praktischen Arbeiten umfassen Problemstellungen, die so auch in echten Projekten auftreten können. In Nach- und Vorbereitung zu den Vorlesungseinheiten werden Aufgaben als auch ein Abschlussprojekt ausgegebene, die zu bearbeiten sind.
 
-Der Kurs richtet sich dabei vorrangig an Student*innen im Hauptstudium (SEB4), die sich in Vorbereitung auf das Software-Labor mit Web-Technologien und Standards vertraut machen wollen. Studenten mit Interesse im Hauptstudium (SEB6/7) und aus der Angewandten Informatik (AIB) sind ebenfalls willkommen.
+Der Kurs richtet sich dabei vorrangig an Student\*innen im Hauptstudium (SEB4), die sich in Vorbereitung auf das Software-Labor mit Web-Technologien und Standards vertraut machen wollen. Student\*innen mit Interesse im Hauptstudium (SEB6/7) und aus der Angewandten Informatik (AIB) sind ebenfalls willkommen.
 
-Die Inhalte der Vorlesung können abhängig von den aktuellen Entwicklungen im Umfeld des Web Engineerings und der Web-Entwicklung variieren. 
+Die Inhalte der Vorlesung können abhängig von den aktuellen Entwicklungen im Umfeld des Web Engineerings und der Web-Entwicklung von Semester zu Semester variieren. 
 
 ## Vorlesungen 
 
@@ -69,4 +69,4 @@ Hausaufgaben als auch praktische Abgaben erfolgen via ILIAS zum angegebenen Zeit
 
 ## Zusammenarbeit
 
-Tests und Hausaufgaben sind individuell zu bearbeiten. Es wird empfohlen sich bezüglich der Labs teamübergreifend auszutauschen. Die Aufgaben sind jedoch in Pair-Programming zu bearbeiten. Ideen, Hilfestellungen etc. sowohl von anderen Kursmitgliedern als auch von andere Quelle sollten entsprechend gekennzeichnet und gemäß gültiger Standards referenziert werden. Bei Gruppenabgaben und Pair-Programming werden alle Team-Mitglieder gleichermaßen bewertet, außer ein Team-Mitglied beschwert sich hinsichtlich der Bewertung. In diesem Fall findet anstelle dessen eine individuelle Bewertung statt.
+Tests und Hausaufgaben sind individuell zu bearbeiten. Es wird empfohlen sich bezüglich der Labs teamübergreifend auszutauschen. Die Aufgaben sind jedoch in Pair-Programming zu bearbeiten. Ideen, Hilfestellungen etc. sowohl von anderen Kursmitgliedern als auch von andere Quelle sollten entsprechend gekennzeichnet und gemäß gültiger Standards referenziert werden. Bei Gruppenabgaben und Pair-Programming werden alle Team-Mitglieder gleichermaßen bewertet, außer ein Team-Mitglied beschwert sich hinsichtlich der Bewertung. In diesem Fall findet anstelle dessen eine individuelle Bewertung jedes einzelnen Team-Mitglieds statt.
