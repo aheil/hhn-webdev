@@ -65,8 +65,8 @@ Die Endnote berechnet sich nach der folgender Punkteskala:
 
 ## Turn-in Policy
 
-Hausaufgaben als auch praktische Abgaben erfolgen via ILIAS zum angegebenen Zeitpunkt. Aufgaben, die nicht fristgemäß eingereicht wurden, werden mit 0 Punkte bewertet. 
+Die Abgabe von Hausaufgaben als auch praktischen Aufgaben erfolgen via ILIAS zum jeweils angegebenen Zeitpunkt. Aufgaben, die nicht fristgemäß eingereicht wurden, werden mit 0 Punkte bewertet. 
 
 ## Zusammenarbeit
 
-Tests und Hausaufgaben sind individuell zu bearbeiten. Es wird empfohlen sich bezüglich der Labs teamübergreifend auszutauschen. Die Aufgaben sind jedoch in Pair-Programming zu bearbeiten. Ideen, Hilfestellungen etc. sowohl von anderen Kursmitgliedern als auch von andere Quelle sollten entsprechend gekennzeichnet und gemäß gültiger Standards referenziert werden. Bei Gruppenabgaben und Pair-Programming werden alle Team-Mitglieder gleichermaßen bewertet, außer ein Team-Mitglied beschwert sich hinsichtlich der Bewertung. In diesem Fall findet anstelle dessen eine individuelle Bewertung jedes einzelnen Team-Mitglieds statt.
+Tests und Hausaufgaben sind individuell zu bearbeiten. Es wird empfohlen sich bezüglich der Labs teamübergreifend auszutauschen. Die Aufgaben sind, wenn nicht anders angegeben in Pair-Programming zu bearbeiten. Ideen, Hilfestellungen etc. sowohl von anderen Kursmitgliedern als auch von andere Quelle sollten entsprechend gekennzeichnet und gemäß gültiger Standards referenziert werden. Bei Gruppenabgaben und Pair-Programming werden alle Team-Mitglieder gleichermaßen bewertet, außer ein Team-Mitglied beschwert sich hinsichtlich der Bewertung. In diesem Fall findet anstelle dessen eine individuelle Bewertung jedes einzelnen Team-Mitglieds statt.
