@@ -2,9 +2,11 @@
 
 ## Kurszeiten
 
-Vorlesung: 1^Vorlesungseinheit / Woche, 90 Min. / Einheit
+Vorlesung: 1 Vorlesungseinheit / Woche, 90 Min. / Einheit
 
 ## Voraussetzungen 
+
+Es wird empfohlen, dass sie folgende Kurse erfolgreich besucht haben oder zeitgleich Besuchen. 
 
 SEB: 
 Developer-Tools des SE (262051)
@@ -12,6 +14,8 @@ DevOps (262062)
 
 AIB: 
 Tools des SW Engineering (173072) 
+
+
 
 ## Beschreibung 
 
@@ -35,11 +39,11 @@ Die Fragen werden im Kurs diskutiert. Fragen und Unterbrechungen sind willkommen
 
 ## Tests
 
-Es wird zwei Tests während den regulären Vorlesungseinheiten geben. Es wird keine Abschlussprüfung geben. Beide Tests müssen zum bestehen des Kurses bestanden werden (40%). Am Ende des Vorlesungszeitraumes wird es während desregulären Prüfungszeitraumes einen Nachholtermin geben.
+Es wird zwei Tests während den regulären Vorlesungseinheiten geben. Es wird keine Abschlussprüfung geben. Beide Tests müssen zum Bestehen des Kurses bestanden werden (40%). Am Ende des Vorlesungszeitraumes wird es während des regulären Prüfungszeitraumes einen Nachholtermin geben.
 
 ## Hausaufgaben und Labs 
 
-Es gibt 3 Labs dun ein Abschlussprojekt. Labs sind echte Aufgabenstellungen. Alle Labs sind im Pair-Programming zu bearbeiten und werden als Pair bearbeitet. Das Abschlussprojekt wird in Gruppen von 4-6 Student*innen angefertigt und in der letzten Vorlesungseinheit dem Kurs vorgestellt.
+Es gibt 3 Labs und ein Abschlussprojekt. Labs sind an echte Probleme angelehnte Aufgabenstellungen. Alle Labs sind im Pair-Programming zu bearbeiten und werden als Pair bewertet. Das Abschlussprojekt wird in Gruppen von 4-6 Student*innen angefertigt und in der letzten Vorlesungseinheit dem Kurs vorgestellt.
 
 ## Benotung 
 
@@ -60,8 +64,6 @@ Die Endnote berechnet sich nach der folgender Punkteskala:
 |-|-|-|-|-|-|-|-|-|-|-|-|-| 
 | Punkte | < 40 | 43 | 50 | 57 | 65 |  70.5 |76 | 80 |83 | 87 | 90 | > 94 |
 |Note | 5.0 | 4.7 | 4,0 | 3.7 | 3.3 | 3.0 |2.7 | 2.3 | 2.0 | 1.7 | 1.3 | 1.0 |
-
-
 
 ## Turn-in Policy
 
