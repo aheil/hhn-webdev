@@ -1,10 +1,12 @@
 # Syllabus
 
-## Course Meeting Times
+## Kurszeiten
 
-Lectures: 1 session / week, 90 min / session
+Vorlesung: 1 Vorlesungseinheit / Woche, 90 Min. / Einheit
 
-## Prerequisites 
+## Voraussetzungen 
+
+Es wird empfohlen, dass sie folgende Kurse erfolgreich besucht haben oder zeitgleich Besuchen. 
 
 SEB: 
 Developer-Tools des SE (262051)
@@ -13,59 +15,60 @@ DevOps (262062)
 AIB: 
 Tools des SW Engineering (173072) 
 
-## Description 
 
-This class is a combination of lectures accompanied by a lab. Lectures cover basic and advanced web technologies, programming languages and recent frameworks. Topics include HTML, CSS, JavaScript and TypeScript, REST, HATEOAS and MVVM as well as various security topics. Assignments include labs that involve implementing various parts of a web application and a final project.
 
-The course is primarily intended for undergraduate software engineering students who want to learn how to build web based applications. Students of the undergraduate applied computer science course are also welcomed. 
+## Beschreibung 
 
-Topics might vary based on the current development in the field of web engineering and web development. 
+Der Kurs ist eine Kombination aus Vorlesungen ergänzt durch praktische Arbeiten (Labs). Die Vorlesungseinheiten behandeln Grundlagen und weiterführende Aspekte von Web-Technologien, Programmiersprachen und Frameworks. Behandelte Themen sind u.a. HTML, CSS, JavaScript und TypeScript, REST, HATEOAS und MVVM ergänzt durch Themen zu Sicherheit und aktuellen Entwicklungen. 
+Die praktischen Arbeiten umfassen Problemstellungen, die so auch in echten Projekten auftreten können. In Nach- und Vorbereitung zu den Vorlesungseinheiten werden Aufgaben als auch ein Abschlussprojekt ausgegebene, die zu bearbeiten sind.
 
-## Lectures 
+Der Kurs richtet sich dabei vorrangig an Student\*innen im Hauptstudium (SEB4), die sich in Vorbereitung auf das Software-Labor mit Web-Technologien und Standards vertraut machen wollen. Student\*innen mit Interesse im Hauptstudium (SEB6/7) und aus der Angewandten Informatik (AIB) sind ebenfalls willkommen.
 
-Each lecture will cover a specific topic. Work through the given readings and screencasts before the lecture and submit by 9 p.m. the night before: 
+Die Inhalte der Vorlesung können abhängig von den aktuellen Entwicklungen im Umfeld des Web Engineerings und der Web-Entwicklung von Semester zu Semester variieren. 
 
-* Answers to your homework reading questions.
-* Own questions about the topic (I will *try* to answer). 
+## Vorlesungen 
 
-We will discuss the questions during classes. Please ask, interrupt and discuss as well as point out mistakes.
+Jede Vorlesungseinheit behandelt ein spezifisches Themenumfeld. Teilweise werden Hausaufgaben  bereitgestellt, die bis 21:00 Uhr am Vorabend via ILIAS einzureichen sind. 
 
-## Quizzes
+Diese beinhalten
 
-There will be two quizzes during regular lecture time slot. There will be no final exam. You need to pass each quiz (40%). There will be the possibility for a second change for each quiz during the finals week in case you failed it.
+* Antworten zu den Hausaufgaben 
+* Eigene Fragen zum Thema (es wird *versucht* diese zu beantworten)
 
-## Assignments 
+Die Fragen werden im Kurs diskutiert. Fragen und Unterbrechungen sind willkommen. Ebenso Hinweise auf Fehler und Verbesserungsvorschläge. 
 
-There are 6 labs and a final project. Labs will look like real world tasks. All lab have to be done in pair-programming. The final project will be submitted by 2-3 pairs (4-6 students) and presented to the class. 
+## Tests
 
-## Grading 
+Es wird zwei Tests während den regulären Vorlesungseinheiten geben. Es wird keine Abschlussprüfung geben. Beide Tests müssen zum Bestehen des Kurses bestanden werden (40%). Am Ende des Vorlesungszeitraumes wird es während des regulären Prüfungszeitraumes einen Nachholtermin geben.
 
-Grading will be based on a total of 100 points.
+## Hausaufgaben und Labs 
 
-| Activities | Percentages |
+Es gibt 3 Labs und ein Abschlussprojekt. Labs sind an echte Probleme angelehnte Aufgabenstellungen. Alle Labs sind im Pair-Programming zu bearbeiten und werden als Pair bewertet. Das Abschlussprojekt wird in Gruppen von 4-6 Student*innen angefertigt und in der letzten Vorlesungseinheit dem Kurs vorgestellt.
+
+## Benotung 
+
+Die Note ergibt sich aus insgesamt 100 Punkten: 
+
+| Aktivitäten | Anteil an der Note |
 | --- | --- | 
-| 2 Quizzes | 20% |
-| Lab Exercises | 35 % |
-| Final Project and Presentation | 25 % |
-| Homework and Class Participation | 20 % | 
+| Hausaufgaben | 30% |
+| Labs | 30% |
+| Endprojekt und Präsentation | 20 % |
+| Hausaufgaben und Mitarbeit im Kurs | 20 % | 
 
-Lab exercises will be graded on the correctness based on both the lab assignment and whether they fulfill the specifications imposed by grading / checking scripts or automated test cases. Grading will be done with a grading scripts, test frameworks and checklists. 
+Labs werden auf Basis der Korrektheit bewertet, inwiefern die angegebenen Spezifikationen erfüllt werden. Die Prüfung findet durch automatisierte Tests, Test Frameworks, Skripte und Checklisten statt. 
 
-
-Final grading will take place based on the  German grading policy for tertiary education:
+Die Endnote berechnet sich nach der folgender Punkteskala:
 
 ||||||||||||||
 |-|-|-|-|-|-|-|-|-|-|-|-|-| 
-| Points | < 40 | 43 | 50 | 57 | 65 |  70.5 |76 | 80 |83 | 87 | 90 | > 94 |
-|Grade | 5.0 | 4.7 | 4,0 | 3.7 | 3.3 | 3.0 |2.7 | 2.3 | 2.0 | 1.7 | 1.3 | 1.0 |
+| Punkte | < 40 | 43 | 50 | 57 | 65 |  70.5 |76 | 80 |83 | 87 | 90 | > 94 |
+|Note | 5.0 | 4.7 | 4,0 | 3.7 | 3.3 | 3.0 |2.7 | 2.3 | 2.0 | 1.7 | 1.3 | 1.0 |
 
 ## Turn-in Policy
 
-You are required to turn in each lab in ILIAS; if you have not turned in all of the labs, you will receive 0 points  
+Die Abgabe von Hausaufgaben als auch praktischen Aufgaben erfolgen via ILIAS zum jeweils angegebenen Zeitpunkt. Aufgaben, die nicht fristgemäß eingereicht wurden, werden mit 0 Punkte bewertet. 
 
-You have a total of 72 late hours to use throughout the semester. After you have used up your late hours, each additional day late will incur a full letter grade penalty. Saturday and Sunday both count as days. (Late days are tracked automatically, so you don't need to email before using one.)
+## Zusammenarbeit
 
-## Collaboration
-
-You may not collaborate on quizzes. You are welcome to discuss the labs with other students but you should complete all assignments on your own, and you should carefully acknowledge all contributions of ideas by others, whether from classmates or from sources you have received. Final projects will be in groups, where you should collaborate. All group members will scored the same unless one group member complains about collaboration; individual scoring will take place instead then. 
-
+Tests und Hausaufgaben sind individuell zu bearbeiten. Es wird empfohlen sich bezüglich der Labs teamübergreifend auszutauschen. Die Aufgaben sind, wenn nicht anders angegeben in Pair-Programming zu bearbeiten. Ideen, Hilfestellungen etc. sowohl von anderen Kursmitgliedern als auch von andere Quelle sollten entsprechend gekennzeichnet und gemäß gültiger Standards referenziert werden. Bei Gruppenabgaben und Pair-Programming werden alle Team-Mitglieder gleichermaßen bewertet, außer ein Team-Mitglied beschwert sich hinsichtlich der Bewertung. In diesem Fall findet anstelle dessen eine individuelle Bewertung jedes einzelnen Team-Mitglieds statt.
