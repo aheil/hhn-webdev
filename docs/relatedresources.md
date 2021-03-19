@@ -6,9 +6,10 @@ This section contains external resources related to the material taught in this 
 
 * [Historical Maps of Computer Networks](https://personalpages.manchester.ac.uk/staff/m.dodge/cybergeography/atlas/historical.html)
 
-# HTML 
+# Basic Web Technologies 
 
 * [HTML Live Standard](https://html.spec.whatwg.org/)
+* [Cascading Style Sheets (Diss. Håkon Wium Lie)](https://www.wiumlie.no/2006/phd/)
 * [W3C Markup Validation Service](https://validator.w3.org/)
 
 ## REST 
