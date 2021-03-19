@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.0.1
+v1.0.2
 <!--/version-->
 
 ---
@@ -78,7 +78,7 @@ window
 
 # DOM Beispiel 
 
-* Das `erste div`-Element besitzt die ID *firstName
+* Das erste `div`-Element besitzt die ID *firstName
 * Es enthält ein Textelement, dass über `childNodes[0]` adressiert werden kann 
 * D.h. der Text ist kein Wert des `div`-Elements sondern der Wert des ersten Kindelements des `div`-Elements 
 
@@ -90,7 +90,7 @@ Andreas
 Heil
 </div> 
 ```
-⏭ [Beispiel](../assets/mouseover.html)
+▶ Beispiel: [mouseover.html](../assets/mouseover.html)
 
 --- 
 
@@ -105,29 +105,27 @@ Heil
 # Event Handler Beispiel
 
 ```html
-<!DOCTYPE html
-PUBLIC "...">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-   <title>mouseover Example</title>         
-   <meta http-equiv="Content-Script-Type" content="text/javascript"></meta>
+  <title>mouseover Example</title>         
+  <meta http-equiv="Content-Script-Type" content="text/javascript"></meta>
 </head>
 <body>
-   <div id="firstName"
-       onmouseover="document.getElementById('firstName').childNodes[0].textContent = 'Andreas'"
-       onmouseout="document.getElementById('firstName').childNodes[0].textContent = 'A.'">
+  <div id="firstName"
+        onmouseover="document.getElementById('firstName').childNodes[0].textContent = 'Andreas'"
+        onmouseout="document.getElementById('firstName').childNodes[0].textContent = 'A.'">
        A.
-       </div>
-       <div id="lastName">
-       Heil
-       </div> 
+  </div>
+  <div id="lastName">Heil</div> 
 </body>
 </html>
 
 ```
 
 ---
+
 # Hinweise
 
 * Standardsprache für Skripte, die in Attributen wie im Beispiel 
@@ -289,7 +287,7 @@ function treeOutline() {
     }
 ```
 
-⏭ Beispiel: [treeOutline.html](../assets/treeOutline.html)
+▶ Beispiel: [treeOutline.html](../assets/treeOutline.html)
 
 ![bg right w:500](../img/webdev.08.treeoutline.png)
 

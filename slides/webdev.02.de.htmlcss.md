@@ -572,7 +572,7 @@ img[alt~="r"] {
 | 0.5in | Zoll (engl. inch) (~2,54cm) |
 | 5pt | Druckerpunkt (~1/72 Zoll) |
 
-Abstände sind ansolut
+Abstände sind absolut
 
 ---
 
