@@ -295,7 +295,125 @@ function treeOutline() {
 
 ---
 
+# JavaScript - Grundlagen
+
+---
+
+# Was ist JavaScript?
+
+## Wikipedia[^3] sagt...
+
+* ... dynamisch typisierte, objektorientierte, aber klassenlose Skriptsprache
+* ... unter anderem auf der Basis von Prototypen 
+* ... lässt sich je nach Bedarf objektorientiert, prozedural oder funktional programmieren
+
+▶ Skriptsprache bedeutet interpretiert, wenig bis keine Deklarationen 
+
+---
+
+# Woher kommt JavaScript?
+
+* Hieß ursprünglich *LiveScript* 
+* Wurde zum Einbetten von Java-Applets genutzt 
+* Basiert auf dem standardisieren ECMAScript 
+
+▶ Ähnelt C mehr als Java 
+
+---
+
+# C vs. JavaScript 
+
+```javascript
+i = 42;
+i = i * 10 + (i / 42);  
+
+while(i >= 0) {
+  sum += i*i; // Kommentar
+}
+
+for (i = 0; i < 100; i++) {
+  /* Kommentar */
+}
+
+if (i < 3) {
+  i = foo(i);
+} else {
+  i =* .01;
+}
+```
+---
+
+# Sprachkonstrukte
+
+Die meisten Operatoren aus C existieren in JavaScript
+
+```javascript
+* / % + - ! >= <= > < > && || ?: 
+```
+
+Funktionen
+
+```javascript
+function foo(i)
+{
+  return i;
+}
+```
+
+Schleifenkonstrukte 
+```javascript
+continue / break / return
+```
+---
+
+# Dynamische Typisierung
+
+```javascript 
+var i;       // kein Typ
+typeof i == 'undefined' 
+i = 32;      // Jetzt typeof i == typeof 32 == 'number'
+i = 'foobar' // Jetzt typeof i == typeof ''foobar' == 'string' 
+i = 'true'   // Jetzt typeof i == `boolean 
+```
+
+* `use strict` *strict*-Mode erfordeert das deklarieren von Variablen (ab ECMAScript 5)[^4]
+* Variablen haben immer den Typ der letzten Zuweisung 
+* Primitive Typen in JS: undefined, number, string, boolean, function, object
+
+---
+
+# Gültigkeitsbereiche von Variablen
+
+Zwei Gültigkeitsbereiche (engl. Scopes): *global* und *function local*  
+
+```javascript
+var globaleVariable;
+
+function foobar() {
+  val lokaleVariable; // lokaleVariable2 gibt es hier schon mit Typ 'undefined' 
+  if (globaleVariable > 0) {
+    var lokaleVariable2 = 2;
+  }
+  // lokaleVariable2 hat hier noch Gültigkeit 😱
+}
+
+```
+---
+
+TBD: Erläuterung zu Hoisting https://www.w3schools.com/js/js_hoisting.asp
+
+---
+
+# Probleme bei Gültigkeitsbereichen
+
+* Globale Variablen in Browsern können Konflikte mit anderen Modulen Verursachen (gleiche global Variable)
+
+* Hoisting TBD
+---
+
 # Referenzen
 
 [^1]: https://dom.spec.whatwg.org/#what
 [^2]: https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler
+[^3]: https://de.wikipedia.org/wiki/JavaScript
+[^4]: https://www.w3schools.com/js/js_strict.asp
