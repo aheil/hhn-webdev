@@ -6,7 +6,7 @@ Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Möglichkeiten bei der G
 
 Sie gestalten eine auf HTMl und CSS basierende digitale Visitenkarte, analog zum abgebildeten Beispiel: 
 
-<img href="img/02_card.png" width="50%" />
+<img href="img/02_card.png" width="350" />
 
 * Geben Sie neben Ihrem Namen, dem Studiengang als auch Ihrem Fachsemester den Grund an, weshalb Sie sich für dieses Fach entschieden haben (Dieser Punkt fließt nicht in die Bewertung ein, freut Ihren Dozenten jedoch ungemein).
 
