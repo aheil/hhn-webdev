@@ -16,7 +16,7 @@ Sie gestalten eine auf HTMl und CSS basierende digitale Visitenkarte, analog zum
 
 * Bei einem Maus-Click auf die Box mit dem GitLab Icon wird die Git Seite der Hochschule (https://git.it.hs-heilbronn.de) angezeigt.
 
-* Fährt die Maus über die Box mit dem GitLab Icon, wird eine Animation analog zum folgenden Beispiel angezeigt: 
+* Fährt die Maus über die Box mit dem GitLab Icon, wird eine Animation (einschließlich des Schattens) analog zum folgenden Beispiel angezeigt: 
 
     ![](img/02_mouseover.gif)
 
@@ -28,7 +28,7 @@ Sie gestalten eine auf HTMl und CSS basierende digitale Visitenkarte, analog zum
     </div>
     ``` 
 
-* <matrikelnummer> ersetzen Sie durch Ihre Matrikelnummer, z.B. `ìd="123456"`. 
+* `<matrikelnummer>` ersetzen Sie durch Ihre Matrikelnummer, z.B. `ìd="123456"`. 
 
 * Hinterlegen Sie in Ihrer CSS-Datei **keinen** Selektor für die Klasse `card`. 
 
