@@ -4,7 +4,7 @@ Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Möglichkeiten bei der G
 
 ## Aufgabenstellung 
 
-Sie gestalten eine auf HTMl und CSS basierende digitale Visitenkarte, analog zum abgebildeten Beispiel: 
+Sie gestalten eine auf HTML und CSS basierende digitale Visitenkarte, analog zum abgebildeten Beispiel: 
 
 <img src="img/02_card.png" width="550" />
 
