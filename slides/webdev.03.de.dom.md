@@ -388,7 +388,7 @@ Zwei Gültigkeitsbereiche (engl. Scopes): *global* und *function local*
 var globaleVariable;
 
 function foobar() {
-  val lokaleVariable; // lokaleVariable2 gibt es hier schon mit Typ 'undefined' 
+  var lokaleVariable; // lokaleVariable2 gibt es hier schon mit Typ 'undefined' 
   if (globaleVariable > 0) {
     var lokaleVariable2 = 2;
   }
@@ -398,7 +398,165 @@ function foobar() {
 ```
 ---
 
-TBD: Erläuterung zu Hoisting https://www.w3schools.com/js/js_hoisting.asp
+# Hoisting
+
+Spezielles Verhalten von JavaScript-Interpretern bei er Deklaration von Variablen 
+
+* Beim Aufruf einer Funktion sucht der Interpreter **alle** lokal definierten variablen in der Funktion
+* Deklaration findet somit sofort bei Eintritt in Funktion statt
+* Initialisierung bzw. Zuweisung findet erst bei der Nutzung der Variable statt 
+
+---
+
+# Hoisting (Forts.)
+
+```javascript
+var foo = 42;
+function foobar() {
+  if (globaleVariable > 0) {
+    var foo = 2 ;
+  }
+}
+```
+
+Sieht im Interpreter ungefähr so aus: 
+
+```javascript
+var foo = 42;
+function foobar() {
+  var foo;       // undefined, überlagert globales foo
+  if (globaleVariable > 0) {
+    var foo = 2; //  Zuweisung erst hier
+  }
+}
+```
+
+---
+
+# Hoisting bei Funktionen
+
+Hoisting findet auch bei Funktionen-Deklarationen statt 
+* Funktionen können vor der Deklaration aufgerufen werden (vgl. C Prototypen, Single-Pass Compiler vs. Multi-Pass Compiler)
+* Gilt nicht für anonyme Methoden
+
+  ```javascript 
+  document.write(typeof foo);  // liefert function
+  foo();                       // wird ausgeführt
+  document.write(typeof bar); // liefert undefined
+  bar();                       // liefet fehler
+  function foo() {};           // Hoisting von Deklaration und Implementierung
+  var bar = function () {};    // Nur Hoisting der Deklaration
+  ```
+---
+
+# Funktions-Deklarationen gemäß ECMAScript (1/5)
+
+## Deklaration
+
+Deklaration
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
+Aufruf
+
+```javascript
+document.write(sum(40, 2));
+
+function sum(a, b) {
+  return a + b;
+}
+
+```
+
+---
+
+# Funktions-Deklarationen gemäß ECMAScript (2/5)
+
+## Anonyme Funktion / Funktions-Ausdruck
+
+Deklaration
+
+```javascript
+// anonyme Funktion / Funktions-Ausdruck
+let sum = function(a, b) {
+  return a + b;
+}
+```
+
+Aufruf
+
+```javascript
+let sum = function(a, b) {
+  return a + b;
+}
+
+document.write(sum(40, 2));
+```
+
+---
+
+# Funktions-Deklarationen gemäß ECMAScript (3/5)
+
+## Anonyme Funktion / Funktions-Ausdruck
+
+Deklaration
+
+```javascript
+(function(a, b) { 
+   return a + b; 
+})();
+```
+
+Aufruf
+
+```javascript
+document.write((function(a, b) { 
+   return a + b; 
+})(40,2));
+```
+
+--- 
+
+# Funktions-Deklarationen gemäß ECMAScript (4/5)
+
+## Konstruktor-Methode
+
+```javascript 
+let sum = new Function('a','b', 'return a + b');
+```
+Aufruf
+```javascript 
+let sum = new Function('a','b', 'return a + b');
+document.write(sum(40, 2));
+```
+
+--- 
+
+# Funktions-Deklarationen gemäß ECMAScript (5/5)
+
+# Arrow Function (Lambda Äquivalent)
+
+Deklaration 
+
+```javascript
+var sum = (a, b) => {  
+  return a + b;
+}
+``` 
+
+Aufruf 
+
+```javascript
+var sum = (a, b) => {  
+  return a + b;
+}
+
+document.write(sum(40, 2));
+```
 
 ---
 
@@ -406,7 +564,202 @@ TBD: Erläuterung zu Hoisting https://www.w3schools.com/js/js_hoisting.asp
 
 * Globale Variablen in Browsern können Konflikte mit anderen Modulen Verursachen (gleiche global Variable)
 
-* Hoisting TBD
+* Hoisting durch überlagern globaler Variablen vor der Initialisierung
+
+* Hoisting bei Funktionen nur bei Funktions-Deklarationen
+
+* Manche JavaScript Guidelines empfehlen alle `var`-Deklaration am Funktionsanfang
+
+* ECMAScript 6 führte Non-Hoisting, 'let' mit Gültigkeitsbereichen,  'const' mit expliziten Gültigkeitsbereiten ein
+
+* Manche Entwicklungsumgebungen lassen zwar kein `var` aber dafür aber `let` und `const` zu
+
+---
+
+# Type: number
+
+* Es gibt nur ein Typ für Zahlen: *number*
+* *number*-Variablen werden immer als 64-bit Floating Point gespeichert 
+* `NaN`, `Infinity` sind ebenfalls vom Typ *number*
+* `1/0 == Infinity` ✔
+* `Math.sqrt(-1) == NaN` ✔
+*  `(0,1 + 0.2) == 0.3` ❌ Fließkommaarithmetik
+* Bitweise Operatoren (~, &, |, ^, >>, <<, >>>) sind 32Bit-Operationen!
+
+
+---
+
+# Type: string
+
+* Variable Länge
+* `+` ist Operator für Konkatenation 
+* Zahlreiche hilfreiche Funktionen
+  * `indexOf()`, `charAt()`, `match()`, `search()`, `replace()`, `toUpperCaser()`, `toLowerCase()`, `slice()`, `substr()` etc.
+  * `'foo'.toUpperCase() // FOO`
+
+---
+
+# Type: boolean
+
+* Entweder *true* oder *false* 
+* Werte werden entweder als wahr oder falsch interpretiert 
+* Falsch
+  * `false`, `0`, `null`, `undefinded`, `NaN`
+`Wahr 
+  * Alles was nicht falsch ist, alle Objekte, Nichtleere Strings, Zahlen ungleich Null (0), Funktionen etc.)
+
+---
+
+# Type: undefined und null 
+
+* `undefined` - kein Wert zugewiesen
+* `null`- Gemäß ECMAScript Spezifikation: "null is a primitive value that represents the intentional absence of any object value."[^5]
+  * `typeof null // object`
+  * `null` ist "falsch"
+  * Beim Zugriff auf Null wird ein `TypeError` geworfen
+
+---
+
+# Type: function
+
+* Hoisting bei "normalen" Deklarationen, können also vor Deklaration genutzt werden
+* Können mit mehr oder weniger Argumenten als in der Deklaration aufgerufen werden
+* Nicht spezifizierte Argumente haben den Wert *undefined*
+* Liefern immer einen Wert zurück (*undefined*)
+
+
+```javascript
+var foobar = function foobar(x) { 
+  if (x <= 1) {
+    return 1;
+  }
+  return x * foobar(x-1);
+}
+document.write(typeof foobar == 'function'); // true
+document.write(foobar.name == 'foobar'); // truename == 'foobar';
+```
+
+---
+
+# Type: object 
+
+* Ungeordnete Paare von Werte-Paaren (engl. name value pair): *Properties*
+* `var foo = {}`
+* `var bar = {name: "Heil", age: NaN, department: "Computer Science"};`
+* `Zugriff über Property oder wie in einer Hash-Table
+  * `bar.name` oder `bar["name"]`
+  * `foo.name` ist *undefined*
+
+---
+
+# Properties können hinzugefügt und entfernt werden
+
+Hinzufügen:
+```javascript
+var foo = {};
+foo.Name = "Andreas"; // foo.Name liefert "Andreas"
+```
+
+Entfernen:
+```javascript
+var foo = {name: "Andreas"};
+delete foo.Name; // foo hat nun keine Properties mehr 
+```
+
+Enumerationen (via Object.keys):
+```javascript
+Object.keys({name: "Andreas", age: NaN}) = ["name", "age"]
+```
+
+---
+
+# Arrays
+
+* `var arr = [1,2,3,4];`
+* `typeof arr == 'object'`
+*  Können lückenhaft und polymorph sein
+   * `arr[5] = "A. Heil"`
+   * [1, 2, 3, 4, , "A. Heil"]
+* Analog zu string eine Vielzahl an Methoden:
+  * `push` ,`pop`, `shift`, `unshift` , `sort`, `reverse`, `splice` etc.
+* Kann Properties enthalten
+  * `arr.Name = "Mein Array"` - Speichern von Werten in Properties
+  * `arr.length = 0;`-  Ups, was passiert da wohl?
+
+---
+
+# Date
+
+* `var date = new Date();`
+* Vom Typ *object* 
+* Speichert kein Datum, sondern Anzahl der Millisekunden seit Mitternacht 1. Januar, 1970 UTC 
+* Muss Zeitzonen in Betracht ziehen 
+* Keine gute Idee für feste Daten (z.B. Geburtstag)
+* Zahlreiche Methoden zur Manipulation
+  * `date.valueOf() > 123459316314
+  * `date.toISOString() > '2021-03-21T09:45:00.123Z'
+  * `date.toLocaleString() > '21/3/2021, 09:45:00 AM'
+
+---
+
+# RegEx
+
+* `let re = /ab+c/i;` als Literal
+* `let re = new RegExp('ab+c', 'i')` Konstruktor mit String-Pattern als erstes Argument
+* `let re = new RegExp(/ab+c/, 'i')` Konstruktor Mit RegEx Literal als erstes Argument (ab ECMAScript 6)
+
+* `exec()` und `test()`
+
+---
+
+# Exceptions 
+
+* Wird oft genutzt um Fehler im Programm zu behandeln
+* Stoppt die Programmausführung mit einem Fehler 
+* Exceptions wandern den Stack hinauf, können mit `try/catch` behandelt werden
+
+  ```javascript
+  try {
+    funktionExistiertNicht();
+  } catch (err) {
+    console.log("Fehler: Funktion exisitert nicht", err.name, err.message);
+  }
+  ```
+
+---
+
+# Finally
+
+* Exceptions könne mit `throw` geworfen werden 
+
+  ```javascript
+  try {
+    throw "Fehler";    
+  } catch (errstr) { // err === "Fehler"
+    console.log('Exception: ', errstr)
+  } finally {
+    // wird nach try/catch ausgeführt
+  }
+  ```
+
+---
+
+# JavaScript in HTML-Seiten einbetten
+
+* Einbinden über dedizierte Datei:
+  ```html
+  <script type="text/javascript" src="foobar.js"></script>
+  ```
+* Inline
+  ```html
+  <head>
+  <script>
+  function foobar() {
+  ..
+  }
+  </script>
+  </head>
+  ```
 ---
 
 # Referenzen
@@ -415,3 +768,4 @@ TBD: Erläuterung zu Hoisting https://www.w3schools.com/js/js_hoisting.asp
 [^2]: https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler
 [^3]: https://de.wikipedia.org/wiki/JavaScript
 [^4]: https://www.w3schools.com/js/js_strict.asp
+[^5]: https://tc39.es/ecma262/#sec-null-value 
