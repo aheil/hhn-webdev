@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.0.2
+v1.0.3
 <!--/version-->
 
 ---
@@ -374,7 +374,7 @@ i = 'foobar' // Jetzt typeof i == typeof ''foobar' == 'string'
 i = 'true'   // Jetzt typeof i == `boolean 
 ```
 
-* `use strict` *strict*-Mode erfordeert das deklarieren von Variablen (ab ECMAScript 5)[^4]
+* `use strict` *strict*-Mode erfordert das deklarieren von Variablen (ab ECMAScript 5)[^4]
 * Variablen haben immer den Typ der letzten Zuweisung 
 * Primitive Typen in JS: undefined, number, string, boolean, function, object
 
@@ -570,7 +570,7 @@ document.write(sum(40, 2));
 
 * Manche JavaScript Guidelines empfehlen alle `var`-Deklaration am Funktionsanfang
 
-* ECMAScript 6 führte Non-Hoisting, 'let' mit Gültigkeitsbereichen,  'const' mit expliziten Gültigkeitsbereiten ein
+* ECMAScript 6 führte Non-Hoisting, 'let' mit Gültigkeitsbereichen, 'const' mit expliziten Gültigkeitsbereiten ein
 
 * Manche Entwicklungsumgebungen lassen zwar kein `var` aber dafür aber `let` und `const` zu
 
