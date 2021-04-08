@@ -560,6 +560,26 @@ document.write(sum(40, 2));
 
 ---
 
+# Vorteile bei Arrow-Funktionen
+
+* Nicht "überschreibbar", wenn `const` genutzt 
+* Scope der *this*-Referenz bezieht sich auf die Umgebende Funktion!
+
+```javascript
+const sum = (a, b) => {
+return a+b;
+}
+
+sum = (a, b) => {
+return a*b;
+}
+
+document.write(sum(40,2));
+```
+
+
+---
+
 # Probleme bei Gültigkeitsbereichen
 
 * Globale Variablen in Browsern können Konflikte mit anderen Modulen Verursachen (gleiche global Variable)
