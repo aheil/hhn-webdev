@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.0.3
+v1.1.0
 <!--/version-->
 
 ---
@@ -780,9 +780,88 @@ Object.keys({name: "Andreas", age: NaN}) = ["name", "age"]
   </script>
   </head>
   ```
+
 ---
 
+# Selbstausführende Funktionen (1)
+
+Bereits kennen gelernte Probleme: 
+* Globaler Scope für Variablen 
+* Herkömmliche Strukturen wie unten in großen Anwendungen irgendwann unübersichtlich 
+
+  ```javascript
+  var foo = 'Hello';
+  var bar = 'World!';
+
+  function baz(){
+    return foo  + ' ' + bar;
+  }
+
+  alert(baz()); 
+  ``` 
+---
+
+# Selbstausführende Funktionen (2)
+
+* Anonyme Funktion 
+* Scope von darin deklarierten Variablen ausschließlich innerhalbe der anonymen Funktion 
+
+  ```javascript
+  (function(){
+    // Scope innerhalb der anonym. Funtion  
+  })
+  ```
+
+--- 
+
+# Selbstausführende Funktionen (3)
+
+Funktion wird durch `()` direkt ausgeführt 
+
+
+  ```javascript
+  (function(){
+    // Scope innerhalb der anonym. Funtion  
+  })()
+  ```
+
+Kurzform
+
+  ```javascript
+  !funtion(){ 
+    // Code 
+  }
+  ```
+
+---
+<!--  
+footer: Beispiel und weiterführende Erläuterungen "http://markdalgleish.com/2011/03/self-executing-anonymous-functions/"
+--> 
+# Selbstausführende Funktionen (4) 
+
+Die letzten drei Zeilen liefern Exceptions, da nichts außerhalb der anonymen Funktion zugänglich ist.
+
+  ```javascript
+  (function(){
+    var foo = 'Hello';
+    var bar = 'World!'
+  
+    function baz(){
+        return foo + ' ' + bar;
+   }
+  })();
+
+  console.log(foo);
+  console.log(bar);
+  console.log(baz());
+  ```
+--- 
+
 # Referenzen
+
+<!--
+footer: "" 
+-->
 
 [^1]: https://dom.spec.whatwg.org/#what
 [^2]: https://html.spec.whatwg.org/multipage/webappapis.html#eventhandler

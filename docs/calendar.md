@@ -7,7 +7,7 @@
 | 3 | Web Technologien: DOM & JavaScript |  |
 | 4 | Web Technologien: JavaScript | Lab: CSS |
 | 5 | Fortgeschrittene Web Technologien: TypeScript | |
-| 6 |  | |
+| 6 | Fortgeschrittene Web Technologien: | WebAssembly |
 | 7 |  | |
 | 8 |  | |
 | 9 |  | |
