@@ -17,8 +17,9 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v0.0.1
+v1.0.0
 <!--/version-->
+
 ---
 
 # Lernziele
@@ -30,7 +31,23 @@ Den Ursprung und die grundlegende Funktionsweise von WebAssembly verstehen.
 # First Things First 
 
 * Niemand entwickelt »in« WebAssembly.
-* WebAssembly ist ein Compiler-Target 
+* WebAssembly ist ein »Compiler Target« 
+
+---
+
+# Was ist ein »Compiler Target«?
+
+* Compiler sind Programme die Code von einer Sprache in eine andere Übersetzen 
+* Auf Englisch: Die Quellsprache heißt  »Source«, die Zielsprache »Target«
+
+| Compiler | Source | Target |
+| --- | --- | --- |
+| javac | Java | Bytecode | 
+| GCC | C | X86 Assembler |
+| GAS | X86 Assembler| X86 Objekt-Code |
+| Eiffel Compiler | Eiffel | C |
+| WebAssembly Compiler | * | WebAssembly |
+
 ---
 
 

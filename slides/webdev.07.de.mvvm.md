@@ -16,12 +16,15 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
-v1.0.1
+v1.1.0
 
 ---
 
 # Lernziele
 
+* **Unterschied** zwischen Entwurfsmuster und Architekturmuster **verstehen**
+* **Grundlagen** des MVVM-Musters **kennen und anwenden lernen**
+* Ein **MVVM-Framework** am Beispiel von Knockout.js **kennen lernen**
 ---
 
 # Typische Web-Anwendungen
@@ -37,14 +40,27 @@ Entwurfsmuster versuchen
 
 ---
 
+# Kurze Wiederholung
+
+Welche Entwurfsmuster sind Ihnen bekannt?
+* ...
+
+Welche Probleme lösen Entwurfsmuster? 
+* ...
+
+Wo finden Sie Informationen über Entwurfsmuster?
+* ...
+
+---
+
 # Exkurs: Architekturmuster
 
 * MVC und MVP (s.u.) werden teilweise als Entwurfsmuster angesehen
-* MVVM kein Entwurfsmuster sonder ein *Architekturmuster* 
-* Architekturmuster beschreiben die Struktur bzw. Organisation einer Anwendung und die Interaktion der einzelnen Komponenten
-* Entwurfsmuster hingegen beschreiben ein Teilproblem einer Software
+* MVVM ist kein Entwurfsmuster sonder ein *Architekturmuster* (gleich mehr dazu)
+* Architekturmuster beschreiben die **Struktur bzw. Organisation einer Anwendung** und die **Interaktion der einzelnen Komponenten**
+* Entwurfsmuster hingegen beschreiben ein **Teilproblem einer Software**
 
-Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z.B. einem View) verwenden ist das Observer Pattern (dt. Beobachtermuster).
+Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z.B. einem View) verwenden, ist das Observer Pattern (dt. Beobachtermuster).
 
 ---
 
@@ -54,7 +70,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * Ein sog. Controller verbindet ein View und das darunterliegende Model
 * Der View nutzt das Model um die Ausgabe zu erzeugen 
 * Das Model enthält die Informationen 
-* Ein Model kann Ereignisse (Events) versenden, wenn sie Eigenschaften des Models ändern
+* Ein Model kann Ereignisse (engl. Events) versenden, wenn sie Eigenschaften des Models ändern
 * Die Events können sowohl vom Controller aber auch vom View genutzt werden  
 
 ---
@@ -64,15 +80,45 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * Unterschiedliche Aspekte de Anwendung werden getrennt (Separation of Concerns)
 * Implementierungen weichen voneinander ab 
 
-![bg right w:600    ](../img/assets/MVC.png)
+![bg right w:500    ](../img/assets/MVC.png)
 
 ---
 
-# Separation of Concerns - Vorteile 
+# Exkurs: Separation of Concerns - Vorteile 
+<!-- footer: "Dijkstra, E.W., On the Role of Scientific Thought, Selected writings on Computing: A Personal Perspective., Springer, ISBN 0-387-90652-5." -->
 
+* Stammt vermutlich von E.W. Dijkstra
 * Wird für Entkopplung benötigt
 * Es kann mehrere Darstellungen geben (Desktop, Web, Mobil)
 * Unterschiedliche Entwickler könnten sich um unterschiedliche Teile kümmern
+
+---
+
+# Exkurs: Weitere Entwurfsprinzipien 
+
+<!-- footer: ""-->
+
+## SOLID
+
+* Single Responsibility Principle
+    * Eine Klasse sollte nur *eine* Aufgabe besitzen 
+* Open/Closed Principle
+    * Klassen sollen *offen für Erweiterungen*, *geschlossen für Veränderungen* sein
+* Liskov Substitution Principle
+    * Eine *Elternklasse* sollte durch eine Kindklasse *ersetzbar* sein, ohne dass das System dadurch ein Fehler verursacht
+
+
+---
+
+# Exkurs: Weitere Entwurfsprinzipien 
+
+## SOLID (Forts.)
+
+* Interface Segregation Principle
+    * Aufrufer sollte nicht von Methoden abhängen, die nicht genutzt werden, d.h. zu große Schnittstellen/Klassen trennen
+* Dependency Inversion Principle
+    * Übergeordnete Module sollten nicht von Funktionen untergeordneter Modulen abhängen
+    * Besser: Alle Klassen (über-/untergeordnet) erben das gleiche Interface, von denen Sie gemeinsam abhängen
 
 ---
 
@@ -102,17 +148,38 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-<!-- ---
-# Implementierungsbeispiel
--->
+# Beispiel: "Hollywood-Prinzip" 
+
+* Entwurfs-Prinzip auch bekannt als "Don't call us, we call you"
+* Sowohl auf Code-Ebene 
+    * Z.B. realisierbar über Observer Pattern 
+* Als auch auf Anwendungsebene
+    * Z.B. über Callbacks (z.B: in SOAP, REST Callbacks[^4], Messaging)
+
+---
+
+# Praxisbeispiel 
+<!-- footer: "Quelle: https://116117.app/" -->
+
+* Web-Anwendung zur Impfterminvergabe 2021 (BaWü et al.)
+* Keine Wartelisten sondern aktive Abfrage nach Terminen 
+* Führte zur regelmäßigen und anhaltenden Überlastung der Server
+* Ideen zur Realisierung nach "Hollywood-Prinzip"?
+
+![bg right w:500](../img/webdev.hollywood_example.png)
+
+---
+<!-- footer: "" -->
 
 # Web Anwendungen 
+
+Wie ist MVC in Web Anwendungen umgesetzt?
 
 * View und Controller sind hier auf Client und Server verteilt 
 * Serverseitig wird ein sog. *Router* benötigt, um Anfragen auf den entsprechenden Controller weiterzuleiten 
 * Im Controller wird dann die entsprechende *Action* ausgeführt   
-* Abhängig vom Request Request wird dann das Model aktualisiert (vgl. HATEOS)
-* Das Ergebnis wird in Form eines Views (hier HTML) angezeigt 
+* Abhängig vom Request wird dann das Model aktualisiert (vgl. HATEOS)
+* Das Ergebnis wird in Form eines Views (in einer Web Anwendung i.d.R. HTML) angezeigt 
 <!-- * Controller und Model werden dabei z.B. durch eine eigene Klasse repräsentiert, der Controller benötigt dabei Zugriff auf eine eigene Klasse, die den View (HMTL) erzeugt --> 
 
 ---
@@ -123,9 +190,47 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * MVC Frameworks: 
     * ASP.&#8203;NET MVC (.NET)
     * Rails (Ruby)
-    * Spring (Java)
+    * Spring (Java) 
     * AngularJS (JS)
     * CakePHP (PHP)
+
+---
+
+# Exkurs: Spring != Spring Boot
+
+* Spring != Spring Boot! 
+* Spring Boot setzt auf Spring auf
+* Im "Sprachgebrauch" oft und gerne nicht getrennt oder vermischt 
+
+---
+
+# Spring
+
+> ...ein umfassendes Programmier- und Konfigurationsmodell für moderne Java-basierte Unternehmensanwendungen – auf allen möglichen Deployment-Plattformen. […]
+
+* Sammlung von Tools für die Anwendungsentwicklung[^2]
+    * Dependency Injection
+    * Events 
+    * Ressourcen-Verwaltung
+    * I18n
+    * Datenzugriff
+    * Transaction-Handling
+    * u.v.m. 
+
+---
+
+# Spring Boot
+
+* Vorkonfiguration der Elemente aus Spring (u.a.)
+    * Konfiguration der Spring-Beans über Spring Boot Properties[^3]
+    * Beispiel: Spring Boot Web enthält "automagisch" einen Tomcat-Container auf Port 8080 ohne Konfiguration 
+    * ...
+* Schnelle Erfolge bei Nutzung von Standardkonfigurationen 
+* Bei Abweichungen von Standards ist tiefergreifendes Wissen erforderlich 
+* Tipp: Möglichst bei den Standards bleiben
+
+
+
 
 ---
 
@@ -253,13 +358,18 @@ Es existieren zwei Varianten für MVP:
 * Durch Implementierung von abstrakter Basisklassen lässt sich sehr viel Redundanz in den Klassen einsparen
 * Speziell in WPF> Kommandos erhalten ebenfalls in Interface: `ICommand` 
 * Commands enthalten eine `execute` und `canExecute` Methode 
-* Ob ein Commando ausgeführt werden kann (UI-Element aktiv) hängt vom Status der `canExecute` Methode ab
+* Ob ein Kommando ausgeführt werden kann (UI-Element aktiv) hängt vom Status der `canExecute` Methode ab
 
 ---
 
-# Beispiel
+# Beispiel Framework: Knockout.js 
 
-Beispielprojekt
+* OSS (MIT Lizenz)
+* JavaScript, daher mit allen Frameworks einsetzbar 
+* Keine weiteren Abhängigkeiten (z.B: Bootstrap o.ä.)
+
+Web: https://knockoutjs.com/
+Tutorial: http://learn.knockoutjs.com/ 
 
 ---
 
@@ -272,3 +382,6 @@ Die Folien basieren auf einer Vorlesung von Florian Rappl[^1].
 # Referenzen
 
 [^1]: https://patterns.florian-rappl.de/Category/Presentation%20patterns?full#slide-aa27a0a7-fb19-4ff0-850d-42fda0ca7ca9
+[^2]: https://spring.io/projects/spring-framework
+[^3]:  https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
+[^4]: https://swagger.io/docs/specification/callbacks/
