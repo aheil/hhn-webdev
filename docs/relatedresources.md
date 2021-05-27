@@ -12,7 +12,11 @@ This section contains external resources related to the material taught in this 
 * [Cascading Style Sheets (Diss. Håkon Wium Lie)](https://www.wiumlie.no/2006/phd/)
 * [W3C Markup Validation Service](https://validator.w3.org/)
 
+## MVVM 
+
+* [Inversion of Control (Martin Fowler)](https://martinfowler.com/bliki/InversionOfControl.html)
+
 ## REST 
 
-* [Architectural Styles and the Design of Network-based Software Architectures (Diss. R. Fielding)](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+* [Architectural Styles and the Design of Network-based Software Architectures (Diss. Roy Fielding)](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 

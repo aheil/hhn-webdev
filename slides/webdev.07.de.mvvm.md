@@ -14,9 +14,9 @@ img[alt~="center"] {
 # MVVM 
 Prof. Dr.-Ing. Andreas Heil
 
-![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
+![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. <br/>Icons by The Noun Project.
 
-v1.1.0
+v1.1.1
 
 ---
 
@@ -148,11 +148,12 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-# Beispiel: "Hollywood-Prinzip" 
+# Beispiel: Inversion of Control (IoC)
 
-* Entwurfs-Prinzip auch bekannt als "Don't call us, we call you"
+* Entwurfs-Prinzip auch bekannt als Hollywood-Prinzip - "Don't call us, we call you"
 * Sowohl auf Code-Ebene 
     * Z.B. realisierbar über Observer Pattern 
+    * Übergabe von 
 * Als auch auf Anwendungsebene
     * Z.B. über Callbacks (z.B: in SOAP, REST Callbacks[^4], Messaging)
 
@@ -161,10 +162,11 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 # Praxisbeispiel 
 <!-- footer: "Quelle: https://116117.app/" -->
 
-* Web-Anwendung zur Impfterminvergabe 2021 (BaWü et al.)
+* Web-Anwendung zur COVID-19 Impfterminvergabe 2021 in BaWü
 * Keine Wartelisten sondern aktive Abfrage nach Terminen 
-* Führte zur regelmäßigen und anhaltenden Überlastung der Server
-* Ideen zur Realisierung nach "Hollywood-Prinzip"?
+* Kontrolle obliegt demnach beim Anwender (F5)
+* Führte zur regelmäßigen Überlastung der Server
+* Ideen zur Realisierung nach IoC?
 
 ![bg right w:500](../img/webdev.hollywood_example.png)
 
@@ -376,6 +378,7 @@ Tutorial: http://learn.knockoutjs.com/
 # Acknowledgments 
 
 Die Folien basieren auf einer Vorlesung von Florian Rappl[^1].
+Dank an [Clemens Vasters](https://twitter.com/clemensv/) für den konstruktiven Beitrag zu IoC 
 
 ---
 
