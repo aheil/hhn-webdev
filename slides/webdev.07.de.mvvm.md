@@ -16,7 +16,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. <br/>Icons by The Noun Project.
 
-v1.1.1
+v1.1.2
 
 ---
 
@@ -84,18 +84,19 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-# Exkurs: Separation of Concerns - Vorteile 
+# Exkurs: Entwurfsprinzipien
+
+## Separation of Concerns 
 <!-- footer: "Dijkstra, E.W., On the Role of Scientific Thought, Selected writings on Computing: A Personal Perspective., Springer, ISBN 0-387-90652-5." -->
 
-* Stammt vermutlich von E.W. Dijkstra
-* Wird für Entkopplung benötigt
+* Stammt (vermutlich) von E.W. Dijkstra
+* Wird für Entkopplung benötigt bzw. genutzt
 * Es kann mehrere Darstellungen geben (Desktop, Web, Mobil)
-* Unterschiedliche Entwickler könnten sich um unterschiedliche Teile kümmern
+* Unterschiedliche Entwickler könnten sich um unterschiedliche "Teile" des Codes kümmern
 
 ---
 
-# Exkurs: Weitere Entwurfsprinzipien 
-
+# Exkurs: Entwurfsprinzipien
 <!-- footer: ""-->
 
 ## SOLID
@@ -110,7 +111,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-# Exkurs: Weitere Entwurfsprinzipien 
+# Exkurs: Entwurfsprinzipien
 
 ## SOLID (Forts.)
 
@@ -121,6 +122,35 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
     * Besser: Alle Klassen (über-/untergeordnet) erben das gleiche Interface, von denen Sie gemeinsam abhängen
 
 ---
+
+# Exkurs: Entwurfsprinzipien
+
+## Inversion of Control (IoC)
+
+* Entwurfs-Prinzip auch bekannt als Hollywood-Prinzip - "Don't call us, we call you"
+* Sowohl auf Code-Ebene 
+    * Z.B. realisierbar über Observer Pattern 
+    * Übergabe von 
+* Als auch auf Anwendungsebene
+    * Z.B. über Callbacks (z.B: in SOAP, REST Callbacks[^4], Messaging)
+
+---
+
+# Exkurs: Entwurfsprinzipien
+
+## Praxisbeispiel IoC
+<!-- footer: "Quelle: https://116117.app/" -->
+
+* Web-Anwendung zur COVID-19 Impfterminvergabe 2021
+* Keine Wartelisten sondern aktive Abfrage nach Terminen 
+* Kontrolle beim Anwender (F5)
+* Führte zur regelmäßigen Überlastung der Server
+* Ideen zur Realisierung nach IoC?
+
+![bg right w:500](../img/webdev.hollywood_example.png)
+
+---
+<!-- footer: "" -->
 
 # Model 
 
@@ -147,31 +177,6 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 * Abhängig von Benutzerinterkation und dem Ergebnis der Aktionen des Models stellt der Controller einen passenden View dar
 
 ---
-
-# Beispiel: Inversion of Control (IoC)
-
-* Entwurfs-Prinzip auch bekannt als Hollywood-Prinzip - "Don't call us, we call you"
-* Sowohl auf Code-Ebene 
-    * Z.B. realisierbar über Observer Pattern 
-    * Übergabe von 
-* Als auch auf Anwendungsebene
-    * Z.B. über Callbacks (z.B: in SOAP, REST Callbacks[^4], Messaging)
-
----
-
-# Praxisbeispiel 
-<!-- footer: "Quelle: https://116117.app/" -->
-
-* Web-Anwendung zur COVID-19 Impfterminvergabe 2021 in BaWü
-* Keine Wartelisten sondern aktive Abfrage nach Terminen 
-* Kontrolle obliegt demnach beim Anwender (F5)
-* Führte zur regelmäßigen Überlastung der Server
-* Ideen zur Realisierung nach IoC?
-
-![bg right w:500](../img/webdev.hollywood_example.png)
-
----
-<!-- footer: "" -->
 
 # Web Anwendungen 
 
