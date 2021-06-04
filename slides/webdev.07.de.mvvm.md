@@ -16,7 +16,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. <br/>Icons by The Noun Project.
 
-v1.1.2
+v1.1.3
 
 ---
 
@@ -377,6 +377,13 @@ Es existieren zwei Varianten für MVP:
 
 Web: https://knockoutjs.com/
 Tutorial: http://learn.knockoutjs.com/ 
+
+---
+
+# Hausuafgabe
+
+1. Bearbeiten Sie die Tutorials unter http://learn.knockoutjs.com/ 
+2. 
 
 ---
 
