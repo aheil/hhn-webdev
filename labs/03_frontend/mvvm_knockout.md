@@ -4,7 +4,7 @@ Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Konzepten des Architektu
 
 ## Aufgabenstellung 
 
-Sie erstellen auf Basis von HTML, CSS und JavaScript mit Hilfe des Frameworks Knowout.js die Start- bzw. Übersichtsseite eines Streaming Portals in der Form von Amazon Prime, Netflix oder Disney+. 
+Sie erstellen auf Basis von HTML, CSS und JavaScript mit Hilfe des Frameworks Knockout.js die Start- bzw. Übersichtsseite eines Streaming Portals in der Form von Amazon Prime, Netflix oder Disney+. 
 
 Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgende Anforderungen müssen jedoch erfüllt sein: 
 
