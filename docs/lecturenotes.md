@@ -8,3 +8,6 @@
 | 5 |  🇩🇪 [TypeScript](https://github.com/aheil/hhn-webdev/blob/main/slides/webdev.05.de.ts.pdf) |
 | 6 | 🇩🇪 [Web Assembly](https://github.com/aheil/hhn-webdev/blob/main/slides/webdev.06.de.wasm.pdf) |
 | 7 | 🇩🇪 [MVVM](https://github.com/aheil/hhn-webdev/blob/main/slides/webdev.07.de.mvvm.pdf) |
+| 8 | 🇩🇪 [REST & HATEOAS](https://github.com/aheil/hhn-webdev/blob/main/slides/webdev.08.de.hateoas.pdf) |
+
+webdev.08.hateoas.de.md
