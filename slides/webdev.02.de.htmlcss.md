@@ -3,7 +3,6 @@
 marp: true
 theme: defalut
 paginate: true
-footer:
 
 ---
 
@@ -19,7 +18,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
-v2.1.0
+v2.1.1
 
 ---
 
@@ -196,7 +195,7 @@ Opening Tag     Closing Tag
 * Anführungszeichen sind zwingend erforderlich
 * `<html>`, `<head>`, `<title>`, und `<body>` sind verpflichtend
 * HTML-Tags und Attribute in Kleinbuchstaben
-* Keine »attribute minimization«
+* Keine sog. »attribute minimization«
 
 ---
 
@@ -498,6 +497,7 @@ Mit Alpha/Transparenz
 #c2a {background-color: #00ff0080;}   /* Transparent Grün */
 #c3a {background-color: #0000ff80;}   /* Transparent Blau */
 ```
+
 ---
 
 # RGB-Funktion
@@ -511,7 +511,7 @@ Via `rgb(R, G, B)`
 #c3 {background-color: rgb(0, 0, 255);}   /* Blau */
 ```
 
-Mit RGB und Alpha via `rgba(R, G, B, A)
+Mit RGB und Alpha via `rgba(R, G, B, A)`
 
 ```css
 #c1a {background-color: rgba(255, 0, 0, 0.2);}   /* Rot mit Transparenz */
@@ -531,6 +531,7 @@ Via `hsl(hue, saturation, lightness)`
 #c3 {background-color: hsl(120, 100%, 25%);}   /* Dunkelgrün */
 #c4 {background-color: hsl(120, 60%, 70%);}    /* Pastelgrün */
 ```
+
 Mit HSL und Alpha-Kanal 
 
 ```css
@@ -653,7 +654,7 @@ Browser
 
 # Styles referenzieren 
 
-* Variante 1: Style Sheet 
+* Variante 1: Style Sheet
 
   ```html
   <head>
