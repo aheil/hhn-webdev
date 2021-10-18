@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.1.0
+v1.1.1
 <!--/version-->
 
 ---
@@ -78,7 +78,7 @@ window
 
 # DOM Beispiel 
 
-* Das erste `div`-Element besitzt die ID *firstName
+* Das erste `div`-Element besitzt die ID *firstName*
 * Es enthält ein Textelement, dass über `childNodes[0]` adressiert werden kann 
 * D.h. der Text ist kein Wert des `div`-Elements sondern der Wert des ersten Kindelements des `div`-Elements 
 
@@ -135,7 +135,7 @@ Heil
 <head>
   ...
   <meta http-equiv="Content-Script-Type" content="text/javascript"></script>
-  ...├
+  ...
 <head>
 ```
 
@@ -222,10 +222,10 @@ body
 
 | Property | Beschreibung |
 |---|---|
-| *nodeType* | Nummer, die den Typ des Nodes beschreibt (s. [treeOutline.html](../assets/treeOutline.html)) |
+| *nodeType* | Nummer, die den Typ des Nodes beschreibt <br />(s. [treeOutline.html](../assets/treeOutline.html)) |
 | *nodeName* | Name des Node,s abhängig vom Typ |
 | *parentNode* | Referenz zum übergeordneten Node |
-| *childNodes* | Nur-lese Array mit den Kind-Nodes, Länge 0 wenn keine vorhanden |
+| *childNodes* | Nur-Lese Array mit den Kind-Nodes, Länge 0 wenn keine vorhanden |
 
 
 ---
@@ -246,7 +246,7 @@ body
 | *hasAttributes()* | Liefert wahr falls der Node Attribute besitzt |
 | *hasChildNodes()* | Liefert wahr, falls der Node untergeordnete Elemente besitzt |
 | *appendChilde(Node)* | Fügt den spezifizierten Node an an das Ende der untergeordneten Elemente hinzu|
-| *insertBefore(Node1, Node2)* | Fügt Node1 direkt vor Node2 in die Liste der untergeordneten Elemente hinzu, |
+| *insertBefore(Node1, Node2)* | Fügt Node1 direkt vor Node2 in die Liste der untergeordneten Elemente hinzu |
 
 ---
 
@@ -374,21 +374,22 @@ i = 'foobar' // Jetzt typeof i == typeof ''foobar' == 'string'
 i = 'true'   // Jetzt typeof i == `boolean 
 ```
 
-* `use strict` *strict*-Mode erfordert das deklarieren von Variablen (ab ECMAScript 5)[^4]
+* `use strict` *strict*-Mode erfordert das deklarieren von Variablen <br /> (ab ECMAScript 5)[^4]
 * Variablen haben immer den Typ der letzten Zuweisung 
-* Primitive Typen in JS: undefined, number, string, boolean, function, object
+* Primitive Typen in JS: *undefined*, *number*, *string*, *boolean*, *function*, *object*
 
 ---
 
 # Gültigkeitsbereiche von Variablen
 
-Zwei Gültigkeitsbereiche (engl. Scopes): *global* und *function local*  
+Zwei Gültigkeitsbereiche (engl. scopes): *global* und *function local*  
 
 ```javascript
 var globaleVariable;
 
 function foobar() {
-  var lokaleVariable; // lokaleVariable2 gibt es hier schon mit Typ 'undefined' 
+  var lokaleVariable; // lokaleVariable2 gibt es schon
+                      // mit Typ 'undefined' 
   if (globaleVariable > 0) {
     var lokaleVariable2 = 2;
   }
@@ -436,7 +437,7 @@ function foobar() {
 # Hoisting bei Funktionen
 
 Hoisting findet auch bei Funktionen-Deklarationen statt 
-* Funktionen können vor der Deklaration aufgerufen werden (vgl. C Prototypen, Single-Pass Compiler vs. Multi-Pass Compiler)
+* Funktionen können vor der Deklaration aufgerufen werden (vgl. C-Prototypen, Single-Pass-Compiler vs. Multi-Pass-Compiler)
 * Gilt nicht für anonyme Methoden
 
   ```javascript 
@@ -450,8 +451,6 @@ Hoisting findet auch bei Funktionen-Deklarationen statt
 ---
 
 # Funktions-Deklarationen gemäß ECMAScript (1/5)
-
-## Deklaration
 
 Deklaration
 
@@ -563,7 +562,7 @@ document.write(sum(40, 2));
 # Vorteile bei Arrow-Funktionen
 
 * Nicht "überschreibbar", wenn `const` genutzt 
-* Scope der *this*-Referenz bezieht sich auf die Umgebende Funktion!
+* Scope der *this*-Referenz bezieht sich auf die umgebende Funktion!
 
 ```javascript
 const sum = (a, b) => {
@@ -582,9 +581,9 @@ document.write(sum(40,2));
 
 # Probleme bei Gültigkeitsbereichen
 
-* Globale Variablen in Browsern können Konflikte mit anderen Modulen Verursachen (gleiche global Variable)
+* Globale Variablen in Browsern können Konflikte mit anderen Modulen verursachen (gleiche global Variable)
 
-* Hoisting durch überlagern globaler Variablen vor der Initialisierung
+* Hoisting durch Überlagern globaler Variablen vor der Initialisierung
 
 * Hoisting bei Funktionen nur bei Funktions-Deklarationen
 
@@ -598,12 +597,12 @@ document.write(sum(40,2));
 
 # Type: number
 
-* Es gibt nur ein Typ für Zahlen: *number*
+* Es gibt nur einen eonzigen Typ für Zahlen: *number*
 * *number*-Variablen werden immer als 64-bit Floating Point gespeichert 
 * `NaN`, `Infinity` sind ebenfalls vom Typ *number*
 * `1/0 == Infinity` ✔
 * `Math.sqrt(-1) == NaN` ✔
-*  `(0,1 + 0.2) == 0.3` ❌ Fließkommaarithmetik
+*  `(0.1 + 0.2) == 0.3` ❌ Fließkommaarithmetik
 * Bitweise Operatoren (~, &, |, ^, >>, <<, >>>) sind 32Bit-Operationen!
 
 
@@ -625,18 +624,18 @@ document.write(sum(40,2));
 * Werte werden entweder als wahr oder falsch interpretiert 
 * Falsch
   * `false`, `0`, `null`, `undefinded`, `NaN`
-`Wahr 
-  * Alles was nicht falsch ist, alle Objekte, Nichtleere Strings, Zahlen ungleich Null (0), Funktionen etc.)
+* Wahr 
+  * Alles was nicht falsch ist, alle Objekte, nichtleere Strings, Zahlen ungleich Null (0), Funktionen etc.)
 
 ---
 
 # Type: undefined und null 
 
 * `undefined` - kein Wert zugewiesen
-* `null`- Gemäß ECMAScript Spezifikation: "null is a primitive value that represents the intentional absence of any object value."[^5]
-  * `typeof null // object`
+* `null`- Gemäß ECMAScript Spezifikation: "null is a primitive value that represents the intentional absence of any object value."[^5] 
+  * `typeof null // liefert object`
   * `null` ist "falsch"
-  * Beim Zugriff auf Null wird ein `TypeError` geworfen
+  * Beim Zugriff auf `null` wird ein `TypeError` geworfen
 
 ---
 
