@@ -16,7 +16,7 @@ Prof. Dr.-Ing. Andreas Heil
 
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. <br/>Icons by The Noun Project.
 
-v1.1.3
+v1.1.4
 
 ---
 
@@ -129,8 +129,7 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 * Entwurfs-Prinzip auch bekannt als Hollywood-Prinzip - "Don't call us, we call you"
 * Sowohl auf Code-Ebene 
-    * Z.B. realisierbar über Observer Pattern 
-    * Übergabe von 
+    * Realisierbar über Observer Pattern 
 * Als auch auf Anwendungsebene
     * Z.B. über Callbacks (z.B: in SOAP, REST Callbacks[^4], Messaging)
 
@@ -152,7 +151,15 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 ---
 <!-- footer: "" -->
 
-# Model 
+#  Model-View-Controller (MVC)
+
+## Zurück zum MVC... 
+
+---
+
+#  Model-View-Controller (MVC)
+
+## Model
 
 * Enthält die Daten 
 * Regelt den Zugriff und wann Änderungen stattfinden 
@@ -160,7 +167,9 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-# View 
+#  Model-View-Controller (MVC)
+
+## View 
 
 * Darstellung des Inhaltes eines Models 
 * Zugriff auf die Daten (nur) durch das Model 
@@ -168,7 +177,9 @@ Beispiel: Das Entwurfsmuster, das wir für die Aktualisierung anderer Objekte (z
 
 ---
 
-# Controller
+#  Model-View-Controller (MVC)
+
+## Controller
 
 * Übersetzt Interaktionen mit dem View in entsprechende Aktionen
 * Ausführung der Aktionen durch das Model 
@@ -375,26 +386,45 @@ Es existieren zwei Varianten für MVP:
 * JavaScript, daher mit allen Frameworks einsetzbar 
 * Keine weiteren Abhängigkeiten (z.B: Bootstrap o.ä.)
 
+
 Web: https://knockoutjs.com/
 Tutorial: http://learn.knockoutjs.com/ 
 
 ---
 
-# Hausuafgabe
+# Knockout.js (Forts.)
+
+* Reine MVVM-Bibliothek, geeignet um die Prinzipien hinter MVVM zu verstehen
+* Angular sowohl MVC als auch MVVM (MV*) möglich 
+* Vue.js stark von Knockout geprägt 
+* Entwickelt von Steve Sanderson
+  * Entwickler/Architekt von ASP.NET MVC 
+  * Architekt von Blazor 
+  * Basis hierfür war unter anderem Knockout, das Sanderson ursprünglich entwickelt hat.
+
+  *
+---
+
+# Hausaufgabe
 
 1. Bearbeiten Sie die Tutorials unter http://learn.knockoutjs.com/ 
-2. 
+2. Bearbeiten Sie folgende Aufgabe: https://github.com/aheil/hhn-webdev/blob/main/labs/03_frontend/mvvm_knockout.md
 
 ---
 
 # Acknowledgments 
 
-Die Folien basieren auf einer Vorlesung von Florian Rappl[^1].
-Dank an [Clemens Vasters](https://twitter.com/clemensv/) für den konstruktiven Beitrag zu IoC 
+Die Folien basieren auf Vorlesung von Florian Rappl[^1].
+Dank an [Clemens Vasters](https://twitter.com/clemensv/) für den konstruktiven Beitrag zu IoC. 
 
 ---
 
 # Referenzen
+
+[1] [Florian Rappl - Design Pattern](https://patterns.florian-rappl.de/Category/Presentation%20patterns?full#slide-aa27a0a7-fb19-4ff0-850d-42fda0ca7ca9)
+[2] [Spring Framework](https://spring.io/projects/spring-framework)
+[3] [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+[4] [Swagger Callbacks](https://swagger.io/docs/specification/callbacks/)
 
 [^1]: https://patterns.florian-rappl.de/Category/Presentation%20patterns?full#slide-aa27a0a7-fb19-4ff0-850d-42fda0ca7ca9
 [^2]: https://spring.io/projects/spring-framework
