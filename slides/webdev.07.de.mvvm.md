@@ -356,7 +356,7 @@ Es existieren zwei Varianten für MVP:
 * ViewModel repräsentiert den View in einer »darstellungsneutralen Form«
 * Direktes Binding zwischen View und ViewModel
 * Ein ViewModel pro View 
-* Wenn auch nicht gebräuchlich findet man manchmal Bezeichnung Model-View-Binder 
+* Wenn auch nicht gebräuchlich, findet man manchmal Bezeichnung Model-View-Binder 
 * In WPF ist XAML der Binder
 
 ---
@@ -374,9 +374,11 @@ Es existieren zwei Varianten für MVP:
 # Praxistipps 
 
 * Durch Implementierung von abstrakter Basisklassen lässt sich sehr viel Redundanz in den Klassen einsparen
-* Speziell in WPF> Kommandos erhalten ebenfalls in Interface: `ICommand` 
-* Commands enthalten eine `execute` und `canExecute` Methode 
-* Ob ein Kommando ausgeführt werden kann (UI-Element aktiv) hängt vom Status der `canExecute` Methode ab
+* Speziell in WPF erhalten *Commands* ebenfalls in Interface: `ICommand` 
+* `ICommands` enthalten eine `execute` und `canExecute` Methode 
+* Ob ein Command ausgeführt werden kann (UI-Element aktiv oder nicht), hängt vom Status der `canExecute` Methode ab
+* Wird durch den Rückgabewert (`true`/`false`) von `canExecute` ab 
+* In Blazor nicht enthalten, allerdings existieren [Workaraounds](https://github.com/dotnet/aspnetcore/issues/26677).
 
 ---
 
