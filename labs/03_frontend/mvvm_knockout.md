@@ -4,7 +4,7 @@ Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Konzepten des Architektu
 
 ## Aufgabenstellung 
 
-Sie erstellen auf Basis von HTML, CSS und JavaScript mit Hilfe des Frameworks Knowout.js die Start- bzw. Übersichtsseite eines Streaming Portals in der Form von Amazon Prime, Netflix oder Disney+. 
+Sie erstellen auf Basis von HTML, CSS und JavaScript mit Hilfe des Frameworks Knockout.js die Start- bzw. Übersichtsseite eines Streaming Portals in der Form von Amazon Prime, Netflix oder Disney+. 
 
 Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgende Anforderungen müssen jedoch erfüllt sein: 
 
@@ -19,17 +19,19 @@ Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgend
 
 * In dieser Aufgabe werden die Daten statisch geladen, Sie können die Daten/Angaben, URLs für Bilder direkt in den Seiten/JS-Dateien hinterlegen
 * Für die Bewertung wird in einer zufällig ausgewählten Liste ein zusätzlicher Eintrag angelegt und getestet. 
-* Für die Bewertung wird Google Chrome genutzt. 
+* Für die Bewertung wird ein zufällig ausgewählter Browser (Google Chrome, Microsoft Edge oder Safari) genutzt. 
 
 * Ihr CSS darf *keine* Fehler und Warnings gemäß CSS Level 3 + SVG enthalten. Die Validierung findet mittels des W3C-Validators https://jigsaw.w3.org/css-validator/ statt.
+
+* Warnings (z.B. durch *Webkit-Properties`im Validator) werden als Fehler gewertet und führen zu Punktabzug.
+  > *Note:* Avoid using on websites. These properties will only work in WebKit applications.
+
+  Quelle: https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions
 
 
 # Abgabe 
 
-* Packen Sie alle Dateien in ein ZIP.
-* Laden Sie die Datei in der hierfür vorgesehen Aufgabe in ILIAS hoch.
-* Nutzen Sie kein RAR, TAR etc., andere Archiv-Formate können nicht automatisiert entpackt und somit gewertet werden.
-* Nutzen Sie keine passwortgeschützten ZIP-Dateien. Passwortgeschützte Dateien werden nicht gewertet.
+* Abgabe erfolgt über das hochschuleigene [GitLab-](https://git.it.hs-heilbronn.de/) und [Commit-System](https://git.it.hs-heilbronn.de/).
 * Senden Sie keine Lösungen per E-Mail ein, per E-Mail eingereichte Lösungen werden nicht gewertet.
 * Verspätete eingereichte Abgaben werden nicht gewertet
 
@@ -37,4 +39,3 @@ Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgend
 
 * Für jede Abweichung von den Anforderungen werden Punkte abgezogen. 
 * Dateien die falsch oder nicht fristgemäß abgegeben wurden, werden **nicht** bewertet. 
-* Prüfen Sie Ihre ZIP-Datei vor der Abgabe, korrupte ZIP-Dateien werden nicht bewertet.
