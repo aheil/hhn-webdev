@@ -180,7 +180,7 @@ Origin: Frame URL ODER Suffix der urspünglichen URL via 'domain(document.domain
 
 Was macht Sinn, was nicht?
 
-  --- 
+--- 
 
 # Frames und Same Origin Policy
 
@@ -197,8 +197,8 @@ Warum? Man möchte verhindern, dass eine Seite von einer bösartigen Sub-Domain 
 * DOM Nodes erhalten de Origin des Frames
 * Cookies: Domain + Pfad 
   * `*.hs-heilbronn.de/aheil`
-  * `docment.cookie` (via JS auf Client-Seite)
-  * Server-Seitig via HTTP-Repsonse
+  * `document.cookie` (via JS auf Client-Seite)
+  * Server-Seitig via HTTP-Response
 
   ---
 
