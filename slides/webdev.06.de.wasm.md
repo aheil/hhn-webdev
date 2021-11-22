@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.0.0
+v1.1.0
 <!--/version-->
 
 ---
@@ -93,7 +93,7 @@ Den Ursprung und die grundlegende Funktionsweise von WebAssembly verstehen.
 * Silverlight
 
 Problem: Sogar in einer Sandbox sind Plugins schwer zu kontrollieren
-  * Plugins funktionieren nicht git mit den versch. Web APIs
+  * Plugins funktionieren nicht mit mit den verschiedenen Web APIs
     * Z.B. Kamera API, Location API
   * Viel wichtiger: Plugins lauen nicht auf Mobilgeräten
   
@@ -103,10 +103,10 @@ Problem: Sogar in einer Sandbox sind Plugins schwer zu kontrollieren
 
 * Google Native Client: Target für Compiler Code, allerdings 
   * Ohne Unterstützung der Web APIs
-  * nur für Chrome verfügbar
+  * Nur für Chrome verfügbar
 
 * Mozilla: asm.js 
-  * Kompiliert C++ auf minimales JavaScript,
+  * Kompiliert C++ auf minimales JavaScript
   * JavaScript Engine kompiliert dies in relativ schnellen nativen Code
   * Problem: Starke unterschiede zwischen JavaScript Frameworks
   * Keine Cross-Browser Kompilierung 
@@ -118,7 +118,7 @@ Problem: Sogar in einer Sandbox sind Plugins schwer zu kontrollieren
 ```javascript
 function add1(x) {
   x = x|0; // x : int
-  return (x+1|0;
+  return (x + 1)|0;
 }
 ```
 
@@ -183,14 +183,19 @@ Wenig überraschend:
 
   ---
 
-# Stack vs. Register[^2] 
+# Stack vs. Register (1)[^2] 
 
 * Register-based 
   ```assembly
   LOAD R4,#2 ;Lade 2 in Register 4
-  LOAD R5,#4 ;Lade 4 into Register 5
+  LOAD R5,#4 ;Lade 4 in Register 5
   ADD R4,R5  ;Addiere R4 and R5, speichere den Wert in R4
   ```
+
+---
+
+# Stack vs. Register (2)[^2] 
+
 
 * Stack
   ```assembly
@@ -198,6 +203,16 @@ Wenig überraschend:
   PUSH #5 ;Push 5 auf den Stack
   ADD     ;Pop zwei Werte, addiere diese und push das Ergebnis auf den Stack
   ```
+
+---
+
+# Abschließende Betrachtung
+## Web Assembly Raytracer
+
+![center h:400](../img/webdev.wasm.raytracer.png)
+
+https://mtharrison.github.io/wasm-raytracer/
+
 ---
 
 # Acknowledgments
