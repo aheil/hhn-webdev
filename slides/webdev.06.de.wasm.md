@@ -17,7 +17,7 @@ Prof. Dr.-Ing. Andreas Heil
 ![h:32 CC 4.0](../img/cc.svg)![h:32 CC 4.0](../img/by.svg) Licensed under a Creative Commons Attribution 4.0 International license. Icons by The Noun Project.
 
 <!--version-->
-v1.1.0
+v1.1.1
 <!--/version-->
 
 ---
@@ -71,9 +71,6 @@ Den Ursprung und die grundlegende Funktionsweise von WebAssembly verstehen.
 * Moderne Engines versuchen die Semantik so kurz wie möglich zu halten 
 * Was allerdings erreicht werden soll: ein »+« soll in eine einzige CPU-Instruktion konvertiert werden (im Vergleich zur vorherigen Folie)
 
-* Moderne Engines try to keep it as short as possible
-* Goal '+' should be converted to  single CPU instruction 
-* op 
 ---
 
 # Geschwindigkeit
@@ -95,7 +92,7 @@ Den Ursprung und die grundlegende Funktionsweise von WebAssembly verstehen.
 Problem: Sogar in einer Sandbox sind Plugins schwer zu kontrollieren
   * Plugins funktionieren nicht mit mit den verschiedenen Web APIs
     * Z.B. Kamera API, Location API
-  * Viel wichtiger: Plugins lauen nicht auf Mobilgeräten
+  * Viel wichtiger: Plugins laufen nicht auf Mobilgeräten
   
  ---
 
@@ -180,8 +177,7 @@ Wenig überraschend:
   * Funktionsweise via Register
   * Meistens Hardware vorbehalten (vgl. Vorlesung Betriebssysteme)
   * Vorteil: Kompilierter Code kann optimiert werden 
-
-  ---
+---
 
 # Stack vs. Register (1)[^2] 
 
