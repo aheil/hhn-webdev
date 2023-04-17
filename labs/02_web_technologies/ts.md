@@ -13,6 +13,9 @@ Die JSON-Datei enthält einen Eintrag pro Person mit
   - Studiengang
   - Fachsemester
   - Link zu Ihrem Bild
+  - Statement ("Ich habe mich...")
+
+Das konkrete JSON-Format steht Ihnen frei.
 
 Nutzen Sie JavaScript um die Datei vom Server zu laden. Es gibt hierfür verschiedene Möglichkeiten. In einer Web-Umgebung können Sie auf den 'fetch()'-Befehl[^2] zurückgreifen.
 
