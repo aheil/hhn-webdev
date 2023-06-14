@@ -4,7 +4,7 @@ Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Konzepten des Architektu
 
 ## Aufgabenstellung 
 
-Sie überarbeiten auf Basis von HTML, CSS und JavaScript mit Hilfe des JavaScript Frameworks Knockout.js die Start- bzw. Übersichtsseite für Ihre Team-Mitglieder. 
+Sie überarbeiten auf Basis von HTML, CSS und JavaScript mit Hilfe des JavaScript Frameworks Knockout.js[^1] die Start- bzw. Übersichtsseite für Ihre Team-Mitglieder. 
 
 Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgende Anforderungen müssen jedoch zwingend erfüllt sein: 
 
@@ -12,7 +12,7 @@ Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgend
 - Die Daten in der Liste werden aus den in der vorherigen Aufgabe erstellebn JSON-Dateien geladen.
 - Im Gegensatz zur vorherigen Aufgabe werden die Daten jedoch über Knockout bzw. das MVVM-Pattern in die Seite geladen.
 - Bei der Auswahl eines Team-Mitglied kommt man auf die Detailansicht Ihrer jeweiligen Visitenkarte. 
-- Im GEgesatz zur vorherigen AUfgabe werden nun auch hier die Daten via Knockout und dem MVVM-Pattern geladen.  
+- Auch hier werden  die Daten via Knockout und dem MVVM-Pattern geladen.  
 * Es besteht die Möglichkeit von der Detailseite zurück zur Hauptseite zu gelangen. 
 * Alle Informationen werden via MVVM geladen 
 * Beschreiben Sie in einer README.txt Datei kurz, wie ein neuer Datensatz hinzugefügt werden kann. 
@@ -23,9 +23,9 @@ Bei der Gestaltung und dem Design der Seite sind Sie weitestgehend frei. Folgend
 * Für die Bewertung wird in der Liste ein zusätzlicher Eintrag angelegt und getestet. 
 * Für die Bewertung wird ein zufällig ausgewählter Browser (Google Chrome, Microsoft Edge oder Safari) genutzt. 
 
-* Ihr CSS darf *keine* Fehler und Warnings gemäß CSS Level 3 + SVG enthalten. Die Validierung findet mittels des W3C-Validators https://jigsaw.w3.org/css-validator/ statt.
+* Ihr CSS darf *keine* Fehler und Warnings gemäß CSS Level 3 + SVG enthalten. Die Validierung findet mittels des W3C-Validators https://jigsaw.w3.org/css-validator/ statt[^3].
 
-* Warnings (z.B. durch *Webkit-Properties`im Validator) werden als Fehler gewertet und führen zu Punktabzug.
+* Warnings (z.B. durch *Webkit-Properties`[^2]im Validator) werden als Fehler gewertet und führen zu Punktabzug.
   > *Note:* Avoid using on websites. These properties will only work in WebKit applications.
 
 Quelle: https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions
