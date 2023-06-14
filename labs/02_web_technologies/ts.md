@@ -1,4 +1,4 @@
-# CSS Grundlagen
+# TypeScript Grundlagen
 
 Ziel dieser Aufgabe ist es, Erfahrung mit grundlegenden Möglichkeiten bei der Nutzung von TypeScript  zu sammeln.
 
